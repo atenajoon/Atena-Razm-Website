@@ -145,8 +145,8 @@ p.lead {
 
 .scroll-down {
   background-color: var(--black);
-  height: 80px;
-  width: 120px;
+  /* height: 80px; */
+  /* width: 120px; */
   display: block;
   position: absolute;
   bottom: 0px;

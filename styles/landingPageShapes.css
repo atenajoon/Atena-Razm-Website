@@ -38,10 +38,7 @@ body {
 /* ------------------------------------ */
 /* -- Background Text -- */
 #landingPageBackground {
-  /* position: fixed; */
-  /* top: 0; */
-  /* left: 0; */
-  /* width: 100%; */
+  padding: 0.5rem;
   height: 100%;
   background: linear-gradient(
     35deg,
@@ -137,8 +134,8 @@ body {
 .word:nth-child(7) {
   /* BOOTSTRAP */
   grid-column: 4 / span 1;
-  grid-row: 4 / span 1;
-  justify-self: start;
+  grid-row: 3 / span 1;
+  justify-self: end;
 }
 .word:nth-child(8) {
   /* LARAVEL */
@@ -154,7 +151,8 @@ body {
 .word:nth-child(10) {
   /* PHP */
   grid-column: 4 / span 1;
-  grid-row: 3 / span 1;
+  grid-row: 4 / span 1;
+  align-self: start;
 }
 
 /* ------------------------------------ */
@@ -162,7 +160,6 @@ body {
 #shape-container {
   display: grid;
   position: absolute;
-  width: 50%;
   transition: margin;
   transition-duration: 1200ms;
   transition-timing-function: ease-in-out;
@@ -182,7 +179,7 @@ body {
   transition: top, left, width, height, border-radius;
   transition-duration: 1200ms;
   transition-timing-function: ease-in-out;
-  
+
   height: 0%;
 }
 
