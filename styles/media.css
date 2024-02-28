@@ -38,27 +38,7 @@
   #shape-container {
     width: 90%;
   }
-  #sec2 .sublink {
-    text-align: center;
-    color: var(--white);
-  }
 
-  #sec2 a:hover {
-    color: crimson;
-  }
-
-  .h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    text-align: left;
-  }
-  .container {
-    padding: 0.1em 0.4em;
-    min-width: 280px;
-  }
-  .lead {
-    display: none;
-  }
   header .scroll-down {
     width: 100%;
     right: 0;
@@ -88,6 +68,29 @@
     right: 3%;
     top: 0;
   }
+  
+  #sec2 .sublink {
+    text-align: center;
+    color: var(--white);
+  }
+
+  #sec2 a:hover {
+    color: crimson;
+  }
+
+  .h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: left;
+  }
+  .container {
+    padding: 0.1em 0.4em;
+    min-width: 280px;
+  }
+  .lead {
+    display: none;
+  }
+
   .section-1 > div {
     margin-top: 60px;
   }
@@ -147,6 +150,12 @@
     font-size: 2em;
     text-align: left;
   }
+  .content-1 {
+    font-size: 4rem;
+  }
+  .content-2 {
+    font-size: 3.2rem;
+  }
   #wrapper > .shape {
     border-radius: 0.7rem;
   }
@@ -159,12 +168,42 @@
   #shape-container {
     width: 70%;
   }
-  .content-1 {
-    font-size: 4rem;
+
+  .scroll-down {
+    height: 10vh;
+    width: 100%;
+    right: 0;
   }
-  .content-2 {
-    font-size: 3.2rem;
+  .scroll-down .glyphicon {
+    font-size: 1.5em;
   }
+
+  .navbar {
+    height: 10vh;
+    width: 100%;
+    right: 0;
+  }
+  .nav {
+    display: flex;
+  }
+  .navbar .nav li {
+    width: calc(100% / 4);
+  }
+  /* toggle between sticky and navbar2 with js */
+  .navbar2 {
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    right: 0;
+  }
+  .sticky {
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    right: 0;
+  }
+
+  
   #sec2 .h3 {
     /* text-align: center; */
     color: var(--white);
@@ -189,26 +228,7 @@
   .text-container {
     margin-top: 5%;
   }
-  .scroll-down {
-    height: 10vh;
-    width: 15vw;
-  }
-  .scroll-down .glyphicon {
-    font-size: 1.5em;
-  }
-  .navbar {
-    width: 120px;
-  }
-  /* toggle between sticky and navbar2 classes with js */
-  .navbar2 {
-    position: absolute;
-    right: 3%;
-  }
-  .sticky {
-    position: fixed;
-    top: 80px;
-    right: 3%;
-  }
+
   .section-1 img {
     max-width: 50%;
     margin: 1em 0;
@@ -237,9 +257,11 @@
 }
   /* Large devices (laptops/desktops, 1100px and up) */
   @media only screen and (min-width: 1101px) {
-    .scroll-down {
-      height: 8vh;
-      width: 8vw;
+    .content-1 {
+      font-size: 4.5rem;
+    }
+    .content-2 {
+      font-size: 4rem;
     }
     #shape-container {
       width: 50%;
@@ -253,12 +275,27 @@
     #wrapper[data-roundness='3'] > .shape:nth-child(4) {
       border-bottom-left-radius: 1rem;
     }
-    .content-1 {
-      font-size: 4.5rem;
+    .scroll-down {
+      right: 3%;
+      height: 8vh;
+      width: 8vw;
     }
-    .content-2 {
-      font-size: 4rem;
+    .navbar {
+      width: 120px;
     }
+    /* toggle between sticky and navbar2 classes with js */
+    .navbar2 {
+      position: absolute;
+      right: 3%;
+      height: 8vh;
+      width: 8vw;
+    }
+    .sticky {
+      position: fixed;
+      top: 80px;
+      right: 3%;
+    }
+    
     .col-3 {
       float: left;
       width: 30%;
@@ -287,6 +324,12 @@
 
   /* X-Large devices (X-laptops/desktops, 1281px and up) */
   @media only screen and (min-width: 1282px) {
+    .content-1 {
+      font-size: 4.5rem;
+    }
+    .content-2 {
+      font-size: 4rem;
+    }
     #wrapper > .shape {
       border-radius: 0.7rem;
     }
@@ -299,12 +342,27 @@
     #shape-container {
       width: 50%;
     }
-    .content-1 {
-      font-size: 4.5rem;
+    .scroll-down {
+      right: 3%;
+      height: 8vh;
+      width: 8vw;
     }
-    .content-2 {
-      font-size: 4rem;
+    .navbar {
+      width: 120px;
     }
+    /* toggle between sticky and navbar2 classes with js */
+    .navbar2 {
+      position: absolute;
+      right: 3%;
+      height: 8vh;
+      width: 8vw;
+    }
+    .sticky {
+      position: fixed;
+      top: 80px;
+      right: 3%;
+    }
+    
     .container {
       padding: 1em 16em;
     }
