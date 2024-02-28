@@ -14,45 +14,46 @@ const configCombinations = [
 //  3 content configs
 const contentArray = [
   [
+    'REACT NATIVE',
+    'IOS',
+    'ANDROID',
+    'JS',
+    'TESTFLIGHT',
+    '',
+    'JENKINS',
     'SONAR CLOUD',
+    'UX/UI',
     'GIT',
+  ],
+  [
+    'SONAR CLOUD',
+    'STEAM',
     'UNITY',
     'IOS',
     'JENKINS',
     '',
-    'C#',
-    'ANDROID',
-    'TESTFLIGHT',
     'UX/UI',
+    'ANDROID',
+    'UNREAL',
+    'C#',
   ],
   [
     'HTML',
     'REACT',
-    'CSS',
-    'JS',
+    'CSS3',
+    'ES6',
     'WORDPRESS',
     '',
-    'PHP',
+    'BOOTSTRAP',
     'LARAVEL',
     'FIGMA',
-    'BOOTSTRAP',
-  ],
-  [
-    'SONAR CLOUD',
-    'IOS',
-    'ANDROID',
-    'JS',
-    'TESTFLIGHT',
-    '',
-    'GIT',
-    'REACT NATIVE',
-    'UX/UI',
-    'JENKINS',
+    'PHP',
   ],
 ];
 
 let bgIndex = 1;
 function changeBackground() {
+  console.log("bgIndex: ", bgIndex);
   const combination = configCombinations[bgIndex];
   shapeContainer.style.marginTop = bgIndex === 1 ? '20rem' : '2rem';
  
@@ -63,10 +64,9 @@ function changeBackground() {
   changeContent();
   bgIndex = (bgIndex + 1) % configCombinations.length;
 }
-
+let contentIndex = 0;
 //  change HTML content
 function changeContent() {
-  let contentIndex = 0;
   const currentContent = contentArray[contentIndex];
   // const currentContent = contentArray[2];
 
@@ -118,7 +118,7 @@ function changeContent() {
 }
 
 setInterval(() => {
-  // changeContent();
+  changeContent();
   changeBackground();
 }, 4000);
 

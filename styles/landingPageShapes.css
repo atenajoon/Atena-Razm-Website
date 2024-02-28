@@ -64,7 +64,6 @@ body {
   place-items: center;
 }
 .content-1 {
-  /* font-size: 4rem; */
   color: var(--text-1-1);
   text-align: center;
   transform: rotate(-25deg);
@@ -74,7 +73,6 @@ body {
 }
 
 .content-2 {
-  /* font-size: 2.5rem; */
   color: var(--text-1-2);
   text-align: center;
   transform: rotate(20deg);
@@ -113,52 +111,51 @@ body {
   justify-self: start;
 }
 .word:nth-child(2) {
-  /* CSS */
-  grid-column: 5 / span 1;
+  /* REACT */
+  grid-column: 4 / span 1;
   grid-row: 2 / span 1;
-  justify-self: start;
+  transform: rotate(33deg);
 }
 .word:nth-child(3) {
-  /* React */
+  /* CSS3 */
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
+  align-items: start;
 }
 .word:nth-child(4) {
-  /* js */
+  /* ES6 */
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
-  align-self: center;
 }
 .word:nth-child(5) {
-  /* React Native */
+  /* WORDPRESS */
   grid-column: 4 / span 1;
   grid-row: 1 / span 1;
   transform: rotate(-13deg);
 }
 
 .word:nth-child(7) {
-  /* PHP */
-  grid-column: 5 / span 1;
-  grid-row: 3 / span 1;
-  justify-self: center;
-  align-self: end;
-}
-.word:nth-child(8) {
-  /* Laravel */
-  grid-row: 3 / span 1;
-  align-self: self-end;
-}
-.word:nth-child(9) {
-  /* Figma */
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
-}
-.word:nth-child(10) {
-  /* Bootstrap */
+  /* BOOTSTRAP */
   grid-column: 4 / span 1;
   grid-row: 4 / span 1;
-  justify-self: end; /* Horizontally center the element within its grid cells */
-  align-self: center;
+  justify-self: start;
+}
+.word:nth-child(8) {
+  /* LARAVEL */
+  grid-row: 3 / span 1;
+  align-self: start;
+}
+.word:nth-child(9) {
+  /* FIGMA */
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  align-self: start;
+  justify-self: start;
+}
+.word:nth-child(10) {
+  /* PHP */
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
 }
 
 /* ------------------------------------ */
