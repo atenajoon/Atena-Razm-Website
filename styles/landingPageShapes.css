@@ -1,0 +1,551 @@
+/* -------------------------------------- */
+/* -- Fonts -- */
+
+/* Web: */
+@font-face {
+  font-family: 'From Cartoon Blocks';
+  src: url('../Fonts/From Cartoon Blocks.ttf') format('truetype');
+}
+
+:root {
+  --black: rgb(47, 47, 47);
+  --gray: rgb(79, 79, 79);
+  --white: aliceblue;
+  /* mobile content */
+  /* --text-2: rgba(4, 106, 89, 0.759);
+  --text-1: rgb(6, 65, 143); */
+  /* game content */
+
+  --text-1-1: rgb(150 247 255); /* mob 3-2 , 1-1 */
+  --text-1-2: rgb(201 250 41); /* web 1-2 , 1-1 */
+  --text-2-1: rgb(255, 242, 170);
+  /* --text-2-2: rgb(129 255 206); */
+  /* --text-3-1: rgb(254, 179, 255); */
+  --text-3-1: rgb(103, 255, 255);
+  /* rgb(201 250 41) */
+  /*  */
+  --text-3-2: rgb(62, 248, 167); /* mob 3-2 , 1-1 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* ------------------------------------ */
+/* -- Background Text -- */
+#landingPageBackground {
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  height: 100%;
+  background: linear-gradient(
+    35deg,
+    #01fe67,
+    #0341bb,
+    #5006da,
+    #5b0335,
+    #f43242,
+    #f6a22d
+  );
+  transition: all 1200ms ease-in-out;
+  /* overflow: hidden; */
+  /* z-index: -1; */
+  background-size: 700%;
+}
+#containerSection {
+  display: contents;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.content-1 {
+  /* font-size: 4rem; */
+  color: var(--text-1-1);
+  text-align: center;
+  transform: rotate(-25deg);
+  transition: all;
+  transition-duration: 1200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.content-2 {
+  /* font-size: 2.5rem; */
+  color: var(--text-1-2);
+  text-align: center;
+  transform: rotate(20deg);
+}
+#word-container {
+  display: contents;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 10px;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;
+}
+.word {
+  font-family: 'From Cartoon Blocks';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* Initially visible */
+  transition: opacity; /* Smooth opacity transition */
+  transition-duration: 700ms;
+  transition-timing-function: ease-in-out;
+}
+.hide {
+  opacity: 0; /* Hidden */
+}
+.wrapperDiv {
+  grid-row: 2 / span 3; /* Span 2 rows starting from the 2nd row */
+  grid-column: 2 / span 3; /* Span 2 columns starting from the 2nd column */
+  justify-self: center; /* Horizontally center the .bigger element within its grid cells */
+  align-self: center;
+}
+.word:nth-child(1) {
+  /* HTML */
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  justify-self: start;
+}
+.word:nth-child(2) {
+  /* CSS */
+  grid-column: 5 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: start;
+}
+.word:nth-child(3) {
+  /* React */
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+.word:nth-child(4) {
+  /* js */
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+}
+.word:nth-child(5) {
+  /* React Native */
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  transform: rotate(-13deg);
+}
+
+.word:nth-child(7) {
+  /* PHP */
+  grid-column: 5 / span 1;
+  grid-row: 3 / span 1;
+  justify-self: center;
+  align-self: end;
+}
+.word:nth-child(8) {
+  /* Laravel */
+  grid-row: 3 / span 1;
+  align-self: self-end;
+}
+.word:nth-child(9) {
+  /* Figma */
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+.word:nth-child(10) {
+  /* Bootstrap */
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 1;
+  justify-self: end; /* Horizontally center the element within its grid cells */
+  align-self: center;
+}
+
+/* ------------------------------------ */
+/* -- Device Shapes -- */
+#shape-container {
+  display: grid;
+  position: absolute;
+  width: 50%;
+  transition: margin;
+  transition-duration: 1200ms;
+  transition-timing-function: ease-in-out;
+  margin-top: 2rem;
+}
+
+#wrapper {
+  aspect-ratio: 1.618;
+  /* width: 90vmin;
+  margin: 3rem; */
+  position: relative;
+  width: 100%;
+}
+
+#wrapper > .shape {
+  position: absolute;
+  transition: top, left, width, height, border-radius;
+  transition-duration: 1200ms;
+  transition-timing-function: ease-in-out;
+  border-radius: 0.7rem;
+  height: 0%;
+}
+
+#wrapper > .shape:nth-child(1),
+.shape:nth-child(2),
+.shape:nth-child(3) {
+  background-color: var(--black);
+}
+#wrapper > .shape:nth-child(4),
+.shape:nth-child(5) {
+  background-color: var(--gray);
+}
+#wrapper > .shape:nth-child(6),
+.shape:nth-child(7),
+.shape:nth-child(8),
+.shape:nth-child(9) {
+  background-color: var(--white);
+}
+
+/* Roundnesses Configurations */
+/* web */
+#wrapper[data-roundness='1'] > .shape:nth-child(4) {
+  border-radius: 0.5rem;
+}
+#wrapper[data-roundness='1'] > .shape:nth-child(6) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='1'] > .shape:nth-child(7) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='1'] > .shape:nth-child(8) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='1'] > .shape:nth-child(9) {
+  border-radius: 10rem;
+}
+/* Game */
+#wrapper[data-roundness='2'] > .shape:nth-child(2) {
+  border-radius: 12rem;
+}
+#wrapper[data-roundness='2'] > .shape:nth-child(3) {
+  border-radius: 12rem;
+}
+#wrapper[data-roundness='2'] > .shape:nth-child(6) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='2'] > .shape:nth-child(7) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='2'] > .shape:nth-child(8) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='2'] > .shape:nth-child(9) {
+  border-radius: 10rem;
+}
+/* Mobile */
+#wrapper[data-roundness='3'] > .shape:nth-child(2) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='3'] > .shape:nth-child(4) {
+  border-bottom-left-radius: 1rem;
+}
+#wrapper[data-roundness='3'] > .shape:nth-child(6) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='3'] > .shape:nth-child(7) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='3'] > .shape:nth-child(8) {
+  border-radius: 10rem;
+}
+#wrapper[data-roundness='3'] > .shape:nth-child(9) {
+  border-radius: 10rem;
+}
+
+/* config #1 : Monitor >> Web Dev*/
+#wrapper[data-configuration='1'] > .shape:nth-child(1) {
+  top: 0%;
+  left: 15%;
+  width: 70%;
+  height: 67%;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+  filter: drop-shadow(0 0 0.75rem rgb(252, 252, 252));
+}
+#wrapper[data-configuration='1'] > .shape:nth-child(2) {
+  top: 65%;
+  left: 43%;
+  width: 15%;
+  height: 25%;
+  border-radius: 0;
+}
+#wrapper[data-configuration='1'] > .shape:nth-child(3) {
+  top: 90%;
+  left: 33%;
+  width: 35%;
+  height: 2%;
+  -webkit-filter: drop-shadow(0 0.75rem 0.75rem rgb(252, 252, 252));
+  filter: drop-shadow(0 0.75rem 0.75rem rgb(252, 252, 252));
+}
+#wrapper[data-configuration='1'] > .shape:nth-child(4) {
+  top: 2%;
+  left: 16.5%;
+  width: 67%;
+  height: 59.5%;
+  z-index: 2;
+}
+#wrapper[data-configuration='1'] > .shape:nth-child(5) {
+  top: 64%;
+  left: 26%;
+  width: 48%;
+  height: 0.6%;
+  z-index: 1;
+}
+#wrapper[data-configuration='1'] > .shape:nth-child(6) {
+  top: 66.5%;
+  left: 80.6%;
+  width: 1%;
+  height: 0.5%;
+}
+#wrapper[data-configuration='1'] > .shape:nth-child(7) {
+  top: 66.5%;
+  left: 80.6%;
+  width: 1%;
+  height: 0.5%;
+}
+#wrapper[data-configuration='1'] > .shape:nth-child(8) {
+  top: 66.5%;
+  left: 80.6%;
+  width: 1%;
+  height: 0.5%;
+}
+#wrapper[data-configuration='1'] > .shape:nth-child(9) {
+  top: 66.5%;
+  left: 80.6%;
+  width: 1%;
+  height: 0.5%;
+}
+
+/* config #2 : Controler >> Game Dev*/
+#wrapper[data-configuration='2'] > .shape:nth-child(1) {
+  top: 0%;
+  left: 35%;
+  width: 30%;
+  height: 40%;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+  filter: drop-shadow(0 0 0.75rem rgb(252, 252, 252));
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(2) {
+  top: 0%;
+  left: 21.5%;
+  width: 29%;
+  height: 47%;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(3) {
+  top: 0%;
+  left: 49.5%;
+  width: 29%;
+  height: 47%;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(4) {
+  top: 9%;
+  left: 33.2%;
+  width: 5.5%;
+  height: 29.5%;
+  z-index: 1;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(5) {
+  top: 19%;
+  left: 27%;
+  width: 18%;
+  height: 9%;
+  z-index: 1;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(6),
+.shape:nth-child(7) {
+  top: 12%;
+  left: 66%;
+  width: 7%;
+  height: 11.5%;
+  z-index: 1;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(7) {
+  top: 12%;
+  left: 66%;
+  width: 7%;
+  height: 11.5%;
+  z-index: 1;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(8) {
+  top: 23%;
+  left: 59%;
+  width: 7%;
+  height: 11.5%;
+  z-index: 1;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(9) {
+  top: 23%;
+  left: 59%;
+  width: 7%;
+  height: 11.5%;
+  z-index: 1;
+}
+
+/*  config #3 :Cellphnoe >> Mobile Dev */
+#wrapper[data-configuration='3'] > .shape:nth-child(1) {
+  top: 0.5%;
+  left: 29.5%;
+  width: 26%;
+  height: 80%;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+  filter: drop-shadow(0 0 0.75rem rgb(252, 252, 252));
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(2) {
+  top: 1.3%;
+  left: 35%;
+  width: 16%;
+  height: 7%;
+  z-index: 1;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(3) {
+  top: 20%;
+  left: 50%;
+  width: 27%;
+  height: 80%;
+  z-index: 2;
+  /* -webkit-filter: drop-shadow(0 0 0.75rem rgb(252, 252, 252, 0.812));
+  filter: drop-shadow(0 0 0.75rem rgba(252, 252, 252, 0.812)); */
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(4) {
+  top: 5.5%;
+  left: 31%;
+  width: 23%;
+  height: 72.5%;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(5) {
+  top: 26%;
+  left: 51.5%;
+  width: 24%;
+  height: 62%;
+  z-index: 2;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(6) {
+  top: 5%;
+  left: 37.8%;
+  width: 9%;
+  height: 0.5%;
+  z-index: 3;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(7) {
+  top: 22.5%;
+  left: 59.5%;
+  width: 8%;
+  height: 1%;
+  z-index: 3;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(8) {
+  top: 5%;
+  left: 47.6%;
+  width: 0.5%;
+  height: 0.8%;
+  z-index: 3;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(9) {
+  top: 90%;
+  left: 61%;
+  width: 5%;
+  height: 8%;
+  z-index: 3;
+}
+
+/* #wrapper[data-configuration='3'] > .shape:nth-child(6) {
+  background-color: rgb(63, 63, 63);
+  top: 9%;
+  left: 33.2%;
+  width: 5.5%;
+  height: 29.5%;
+  z-index: 1;
+  border-radius: 0;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(7) {
+  background-color: rgb(63, 63, 63);
+  top: 19%;
+  left: 27%;
+  width: 18%;
+  height: 9%;
+  z-index: 1;
+  border-radius: 0;
+} */
+/* 
+#wrapper[data-configuration='3'] > .shape:nth-child(1) {
+  background-color: var(--white);
+  top: 20%;
+  left: 20%;
+  width: 30%;
+  height: 70%;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(2) {
+  background-color: blueviolet;
+  top: 60%;
+  left: 0%;
+  width: 20%;
+  height: 20%;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(3) {
+  background-color: yellowgreen;
+  top: 20%;
+  left: 50%;
+  width: 40%;
+  height: 70%;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(4) {
+  background-color: black;
+  top: 20%;
+  left: 70%;
+  width: 10%;
+  height: 40%;
+} */
+
+/* #wrapper[data-configuration='2'] > .shape:nth-child(5) {
+  background-color: var(--black);
+  top: 60%;
+  left: 26%;
+  width: 48%;
+  height: 0.3%;
+  z-index: 1;
+} */
+/* #wrapper[data-configuration='2'] > .shape:nth-child(6) {
+  color: var(--white);
+  top: 5%;
+  left: 20%;
+  width: 60%;
+  height: 50%;
+  z-index: 3;
+} */
+/* #wrapper[data-configuration='2'] > .shape:nth-child(1) {
+  background-color: var(--white);
+  top: 50%;
+  left: 40%;
+  width: 70%;
+  height: 30%;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(2) {
+  background-color: blueviolet;
+  top: 90%;
+  left: 20%;
+  width: 70%;
+  height: 10%;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(3) {
+  background-color: yellowgreen;
+  top: 40%;
+  left: 70%;
+  width: 30%;
+  height: 40%;
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(4) {
+  background-color: black;
+  top: 20%;
+  left: 70%;
+  width: 10%;
+  height: 40%;
+} */
