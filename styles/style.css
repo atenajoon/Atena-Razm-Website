@@ -152,6 +152,8 @@ p.lead {
   bottom: 0px;
   right: 3%;
   text-align: center;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+  filter: drop-shadow(0 0 0.75rem rgb(252, 252, 252));
 }
 .scroll-down .glyphicon {
   color: #ffffff;
