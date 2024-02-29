@@ -1,6 +1,4 @@
-
-   
-window.onscroll = function () { navOnScroll2(); };
+window.onscroll = function() {navOnScroll();};
 const navbar = document.getElementById("navbar");
 
 let highlightSections = true;
@@ -11,27 +9,14 @@ function scrollFinished() {
     console.log("finished");
 }
 
-function navOnScroll2() {
-    console.log("nav.js");
-const MOBILE_OFFSET = window.scrollY;
-const WINDOWS_OFFSET = window.scrollY + 80;    
-let innerH = window.innerHeight;
-let innerW = window.innerWidth;
-
-let offset = innerW <= 767 ? MOBILE_OFFSET : WINDOWS_OFFSET;
-console.log("offset: ", offset);
-console.log("innerH: ", innerH);
-}
 function navOnScroll() {
-
     const MOBILE_OFFSET = window.scrollY;
-    const WINDOWS_OFFSET = window.scrollY + 80;    
+    const WINDOWS_OFFSET = window.scrollY + 190;    
     let innerH = window.innerHeight;
     let innerW = window.innerWidth;
 
     let offset = innerW <= 767 ? MOBILE_OFFSET : WINDOWS_OFFSET;
-    // console.log("offset: ", offset);
-    // console.log("innerH: ", innerH);
+    console.log("WINDOWS_OFFSET offset: ", WINDOWS_OFFSET);
 
     if (offset >= innerH) {
         // navbar.classList.remove("navbar2");
@@ -45,33 +30,33 @@ function navOnScroll() {
     const SECTION_COUNT = document.querySelectorAll("section");
 
     
-    let nav=[];
-    for(let i=1; i<=4; i++) { nav[i] = document.getElementById("nav-item-"+i); }
+    // let nav=[];
+    // for(let i=1; i<=4; i++) { nav[i] = document.getElementById("nav-item-"+i); }
     
     
-    if(highlightSections) {
-        sec = [];
-        SECTION_LENGTHS = [ null, 200, 200, 450 ];
+    // if(highlightSections) {
+    //     sec = [];
+    //     SECTION_LENGTHS = [ null, 200, 200, 450 ];
         
-        for(var i = 2; i <= SECTION_COUNT.length; i++) { 
-            sec[i] = document.getElementById("sec" + i).offsetTop - SECTION_LENGTHS[i-1];
-        }
+    //     for(var i = 2; i <= SECTION_COUNT.length; i++) { 
+    //         sec[i] = document.getElementById("sec" + i).offsetTop - SECTION_LENGTHS[i-1];
+    //     }
         
-        if (offset <= sec[2]) { activate(1); }
-        else if (offset <= sec[3]) { activate(2); }
-        else if (offset <= sec[4]) { activate(3); }
-        else { activate(4); }
-    }
+    //     if (offset <= sec[2]) { activate(1); }
+    //     else if (offset <= sec[3]) { activate(2); }
+    //     else if (offset <= sec[4]) { activate(3); }
+    //     else { activate(4); }
+    // }
     
-    function activate(navItem) {
-        for(i = 1; i <= 4; i++) {
-            if(i == navItem) {
-                nav[i].classList.add("active");
-            } else {
-                nav[i].classList.remove("active");
-            }
-        }
-    }
+    // function activate(navItem) {
+    //     for(i = 1; i <= 4; i++) {
+    //         if(i == navItem) {
+    //             nav[i].classList.add("active");
+    //         } else {
+    //             nav[i].classList.remove("active");
+    //         }
+    //     }
+    // }
 
     if(scrollTimer !== -1) {clearTimeout(scrollTimer);}
     scrollTimer = window.setTimeout('scrollFinished()', 300);

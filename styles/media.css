@@ -176,7 +176,7 @@
   }
 
   .navbar {
-    right: 3%;
+    right: 2.5vw;;
     width: 8vw;
     position: absolute;
     top: 100%;
@@ -185,6 +185,7 @@
   .sticky {
   position: fixed;
   top: 20%;
+  right: 2.5vw;
   }
   .nav {
     display: flex;
@@ -266,12 +267,12 @@
       border-bottom-left-radius: 1rem;
     }
     .scroll-down {
-      right: 3%;
+      right: 2.5vw;;
       height: 8vh;
       width: 8vw;
     }
     .navbar {
-      right: 3%;
+      right: 2.5vw;;
       width: 8vw;
       position: absolute;
       top: 100%;
@@ -280,6 +281,7 @@
     .sticky {
     position: fixed;
     top: 20%;
+    right: 2.5vw;
     }
     
     .col-3 {
@@ -329,12 +331,12 @@
       width: 50%;
     }
     .scroll-down {
-      right: 3%;
+      right: 2.5vw;;
       height: 8vh;
       width: 8vw;
     }
     .navbar {
-      right: 3%;
+      right: 2.5vw;;
       width: 8vw;
       position: absolute;
       top: 100%;
@@ -343,6 +345,7 @@
     .sticky {
     position: fixed;
     top: 20%;
+    right: 2.5vw;
     }
     
     .container {
