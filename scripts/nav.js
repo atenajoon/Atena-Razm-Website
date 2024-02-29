@@ -1,4 +1,6 @@
-window.onscroll = function() {navOnScroll();};
+
+   
+window.onscroll = function () { navOnScroll2(); };
 const navbar = document.getElementById("navbar");
 
 let highlightSections = true;
@@ -9,22 +11,34 @@ function scrollFinished() {
     console.log("finished");
 }
 
+function navOnScroll2() {
+    console.log("nav.js");
+const MOBILE_OFFSET = window.scrollY;
+const WINDOWS_OFFSET = window.scrollY + 80;    
+let innerH = window.innerHeight;
+let innerW = window.innerWidth;
+
+let offset = innerW <= 767 ? MOBILE_OFFSET : WINDOWS_OFFSET;
+console.log("offset: ", offset);
+console.log("innerH: ", innerH);
+}
 function navOnScroll() {
 
-    const MOBILE_OFFSET = window.pageYOffset;
-    const WINDOWS_OFFSET = window.pageYOffset + 80;
+    const MOBILE_OFFSET = window.scrollY;
+    const WINDOWS_OFFSET = window.scrollY + 80;    
     let innerH = window.innerHeight;
     let innerW = window.innerWidth;
 
     let offset = innerW <= 767 ? MOBILE_OFFSET : WINDOWS_OFFSET;
-    console.log("offset: ", offset);
+    // console.log("offset: ", offset);
+    // console.log("innerH: ", innerH);
 
     if (offset >= innerH) {
-        navbar.classList.remove("navbar2");
+        // navbar.classList.remove("navbar2");
         navbar.classList.add("sticky");
     } else {
         navbar.classList.remove("sticky");
-        navbar.classList.add("navbar2");
+        // navbar.classList.add("navbar2");
     }
 
     // updating the nav activation on scroll

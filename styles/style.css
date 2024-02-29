@@ -62,11 +62,11 @@ header {
 body,
 header {
   font-family: var(--font);
-  height: 100vh;
 }
 body {
   font-size: 1.1em;
   line-height: 1.8;
+  height: 100vh;
 }
 h2,
 h3 {

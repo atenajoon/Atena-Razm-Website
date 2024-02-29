@@ -48,27 +48,24 @@
     font-size: 1.2em;
   }
   .navbar {
+    position: absolute;
+    height: 10vh;
     width: 100%;
+    right: 0;
     left: 0;
   }
+  /* toggle between position absolute and sticky with js */
+  .sticky {
+    position: fixed;
+  }
+  
   .nav {
     display: flex;
   }
   .navbar .nav li {
     width: calc(100% / 4);
   }
-  /* toggle between sticky and navbar2 with js */
-  .navbar2 {
-    position: absolute;
-    right: 3%;
-    bottom: -80px;
-  }
-  .sticky {
-    position: fixed;
-    right: 3%;
-    top: 0;
-  }
-  
+
   #sec2 .sublink {
     text-align: center;
     color: var(--white);
@@ -179,28 +176,21 @@
   }
 
   .navbar {
-    height: 10vh;
-    width: 100%;
-    right: 0;
+    right: 3%;
+    width: 8vw;
+    position: absolute;
+    top: 100%;
+  }
+  /* toggle between position absolute and sticky classes with js */
+  .sticky {
+  position: fixed;
+  top: 20%;
   }
   .nav {
     display: flex;
   }
   .navbar .nav li {
     width: calc(100% / 4);
-  }
-  /* toggle between sticky and navbar2 with js */
-  .navbar2 {
-    position: absolute;
-    height: 10vh;
-    width: 100%;
-    right: 0;
-  }
-  .sticky {
-    position: fixed;
-    height: 10vh;
-    width: 100%;
-    right: 0;
   }
 
   
@@ -281,19 +271,15 @@
       width: 8vw;
     }
     .navbar {
-      width: 120px;
-    }
-    /* toggle between sticky and navbar2 classes with js */
-    .navbar2 {
-      position: absolute;
       right: 3%;
-      height: 8vh;
       width: 8vw;
+      position: absolute;
+      top: 100%;
     }
+    /* toggle between position absolute and sticky classes with js */
     .sticky {
-      position: fixed;
-      top: 80px;
-      right: 3%;
+    position: fixed;
+    top: 20%;
     }
     
     .col-3 {
@@ -348,19 +334,15 @@
       width: 8vw;
     }
     .navbar {
-      width: 120px;
-    }
-    /* toggle between sticky and navbar2 classes with js */
-    .navbar2 {
-      position: absolute;
       right: 3%;
-      height: 8vh;
       width: 8vw;
+      position: absolute;
+      top: 100%;
     }
+    /* toggle between position absolute and sticky classes with js */
     .sticky {
-      position: fixed;
-      top: 80px;
-      right: 3%;
+    position: fixed;
+    top: 20%;
     }
     
     .container {
