@@ -1,5 +1,15 @@
 window.onscroll = function() {navOnScroll();};
 const navbar = document.getElementById("navbar");
+const userAgent = navigator.userAgent;
+if (userAgent.includes('Chrome')) {
+    //   Chrome-specific code
+    navbar.right = "3vw";
+    console.log("Chrome");
+} else if (userAgent.includes('Firefox')) {
+    // Firefox-specific code
+    navbar.right = "5vw";
+    console.log("Firefox");
+}
 
 let highlightSections = true;
 let scrollTimer = -1;
@@ -11,12 +21,12 @@ function scrollFinished() {
 
 function navOnScroll() {
     const MOBILE_OFFSET = window.scrollY;
-    const WINDOWS_OFFSET = window.scrollY + 190;    
+    const WINDOWS_OFFSET = window.scrollY + 200;    
     let innerH = window.innerHeight;
     let innerW = window.innerWidth;
 
-    let offset = innerW <= 767 ? MOBILE_OFFSET : WINDOWS_OFFSET;
-    console.log("WINDOWS_OFFSET offset: ", WINDOWS_OFFSET);
+    let offset = innerW <= 1100 ? MOBILE_OFFSET : WINDOWS_OFFSET;
+    // console.log("WINDOWS_OFFSET offset: ", WINDOWS_OFFSET);
 
     if (offset >= innerH) {
         // navbar.classList.remove("navbar2");

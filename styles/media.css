@@ -40,7 +40,7 @@
   }
 
   header .scroll-down {
-    width: 100%;
+    width: 100vw;
     right: 0;
     height: 12vh;
   }
@@ -50,13 +50,19 @@
   .navbar {
     position: absolute;
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     right: 0;
     left: 0;
+    top: 100vh;
   }
   /* toggle between position absolute and sticky with js */
   .sticky {
     position: fixed;
+    height: 10vh;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    top: 0;
   }
   
   .nav {
@@ -168,7 +174,7 @@
 
   .scroll-down {
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     right: 0;
   }
   .scroll-down .glyphicon {
@@ -176,16 +182,21 @@
   }
 
   .navbar {
-    right: 2.5vw;;
-    width: 8vw;
     position: absolute;
-    top: 100%;
+    height: 10vh;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    top: 100vh;
   }
   /* toggle between position absolute and sticky classes with js */
   .sticky {
   position: fixed;
-  top: 20%;
-  right: 2.5vw;
+  height: 10vh;
+  width: 100vw;
+  right: 0;
+  left: 0;
+  top: 0;
   }
   .nav {
     display: flex;
@@ -275,12 +286,12 @@
       right: 2.5vw;;
       width: 8vw;
       position: absolute;
-      top: 100%;
+      top: 100vh;
     }
     /* toggle between position absolute and sticky classes with js */
     .sticky {
     position: fixed;
-    top: 20%;
+    top: 20vh;
     right: 2.5vw;
     }
     
@@ -331,20 +342,20 @@
       width: 50%;
     }
     .scroll-down {
-      right: 2.5vw;;
+      right: 2.5vw;
       height: 8vh;
       width: 8vw;
     }
     .navbar {
-      right: 2.5vw;;
+      right: 2.5vw;
       width: 8vw;
       position: absolute;
-      top: 100%;
+      top: 100vh;
     }
     /* toggle between position absolute and sticky classes with js */
     .sticky {
     position: fixed;
-    top: 20%;
+    top: 20vh;
     right: 2.5vw;
     }
     
