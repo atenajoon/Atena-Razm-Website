@@ -18,6 +18,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="stylesheet" href="styles/style.css" />
 
     <title>
       Atena Razm - Client Software Developer - AWD from BCIT - Interactive
@@ -27,7 +37,7 @@
   <body>
     <!-- header -->
     <header class="header">
-      <section id="landing-sec">
+      <section id="landingPageBackground">
         <!-- random-shappes -->
         <section id="containerSection">
           <div id="shape-container">
@@ -45,45 +55,46 @@
           </div>
           <div id="word-container">
             <div id="div1" class="word content-2">HTML</div>
-            <div id="div2" class="word content-1">CSS</div>
-            <div id="div3" class="word content-1">React</div>
-            <div id="div4" class="word content-1">JS</div>
-            <div id="div5" class="word content-2">ReactNative</div>
+            <div id="div2" class="word content-1">REACT</div>
+            <div id="div3" class="word content-1">CSS3</div>
+            <div id="div4" class="word content-1">ES6</div>
+            <div id="div5" class="word content-2">WORDPRESS</div>
             <div id="wrapperDiv" class="word"></div>
-            <div id="div7" class="word content-1">PHP</div>
-            <div id="div8" class="word content-2">Laravel</div>
-            <div id="div9" class="word content-1">Figma</div>
-            <div id="div10" class="word content-2">Bootstrap</div>
+            <div id="div7" class="word content-1">BOOTSTRAP</div>
+            <div id="div8" class="word content-2">LARAVEL</div>
+            <div id="div9" class="word content-1">FIGMA</div>
+            <div id="div10" class="word content-2">PHP</div>
           </div>
         </section>
         <!-- Menu Arrow -->
-        <a href="#section-1" class="scroll-down">
+        <a href="#profile-sec" class="scroll-down">
           <span class="glyphicon"><i class="fa">&#xf078;</i></span>
         </a>
+        <!-- Navigation Bar -->
+        <header id="navbar" class="navbar">
+          <nav role="navigation">
+            <ul class="nav">
+              <li id="nav-item-1" class="active">
+                <a href="#section-1">Profile</a>
+              </li>
+              <li id="nav-item-2" class=""><a href="#section-2">Skills</a></li>
+              <li id="nav-item-3" class="">
+                <a href="#section-3">Experience</a>
+              </li>
+              <li id="nav-item-4" class=""><a href="#section-4">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
       </section>
-      <section>
-        <!-- navigation Bar -->
-        <nav class="navbar" id="navbar" role="navigation">
-          <ul class="nav">
-            <li id="nav-item-1" class="active">
-              <a href="#section-1">Profile</a>
-            </li>
-            <li id="nav-item-2" class=""><a href="#section-2">Skills</a></li>
-            <li id="nav-item-3" class="">
-              <a href="#section-3">Experience</a>
-            </li>
-            <li id="nav-item-4" class=""><a href="#section-4">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
+
     </header>
     <!-- main -->
     <main>
-      <!-- About Me -->
-      <section id="about-me-sec">
-        <div>
-          <h1><span>Atena Razm</span></h1>
-          <p>Client Software Developer</p>
+      <!-- Profile -->
+      <section id="profile-sec" class="center">
+        <div class="container text-container">
+          <h1><span class="h1">Atena Razm</span></h1>
+          <p class="lead">Client Software Developer</p>
         </div>
         <span></span>
         <hr />
@@ -145,7 +156,7 @@
         </div>
       </section>
       <!-- Projects -->
-      <section id="sec2" class="section-2">
+      <section id="project-sec" class="section-2">
         <div class="bkg-dark container">
           <h2 class="h2">Projects</h2>
           <hr />
@@ -174,7 +185,7 @@
         </h3>
       </section>
       <!-- Work Experience -->
-      <section id="sec3" class="section-3">
+      <section id="experience-sec" class="section-3">
         <span id="section-3"></span>
         <div class="container">
           <h2 class="h2">Work Experience</h2>
@@ -262,7 +273,7 @@
     <!-- footer -->
     <footer>
       <!-- Contact Me -->
-      <section id="sec4" class="section-4">
+      <section id="contact-sec" class="section-4">
         <div class="bkg-dark container wrapper">
           <h2 class="h2">Contact Me!</h2>
           <div class="media">
@@ -296,7 +307,8 @@
       </section>
     </footer>
 
-    <!-- Scripts -->
+    <!-- scripts -->
+    <script src="scripts/landingPageShapes.js"></script>
     <script src="scripts/nav.js"></script>
     <script src="scripts/tabs.js"></script>
   </body>
