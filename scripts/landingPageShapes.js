@@ -118,7 +118,6 @@ function changeContent() {
 }
 
 setInterval(() => {
-  changeContent();
   changeBackground();
 }, 4000);
 
