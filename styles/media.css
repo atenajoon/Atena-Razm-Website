@@ -97,10 +97,10 @@
   .section-1 > div {
     margin-top: 60px;
   }
-  .section-1 img {
+  /* .section-1 img {
     max-width: 50%;
     margin: 1em 0;
-  }
+  } */
   #profile-content > div > h3 {
     text-align: center;
   }
@@ -231,10 +231,10 @@
     margin-top: 5%;
   }
 
-  .section-1 img {
+  /* .section-1 img {
     max-width: 50%;
     margin: 1em 0;
-  }
+  } */
   #profile-content p {
     text-align: left;
   }
@@ -295,12 +295,12 @@
     
     .col-3 {
       float: left;
-      width: 30%;
+      width: 30vw;
     }
-    .section-1 img {
+    /* .section-1 img {
       max-width: 100%;
       margin: 0 1.8em 0 0;
-    }
+    } */
     #profile-content:after {
       clear: both;
       content: '';
