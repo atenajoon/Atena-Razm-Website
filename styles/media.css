@@ -283,7 +283,6 @@
       width: 8vw;
     }
     .navbar {
-      right: 2.5vw;;
       width: 8vw;
       position: absolute;
       top: 100vh;
@@ -292,7 +291,6 @@
     .sticky {
     position: fixed;
     top: 20vh;
-    right: 2.5vw;
     }
     
     .col-3 {
@@ -347,7 +345,6 @@
       width: 8vw;
     }
     .navbar {
-      right: 2.5vw;
       width: 8vw;
       position: absolute;
       top: 100vh;
@@ -356,7 +353,6 @@
     .sticky {
     position: fixed;
     top: 20vh;
-    right: 2.5vw;
     }
     
     .container {

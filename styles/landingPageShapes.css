@@ -52,14 +52,14 @@ body {
   transition: all 1200ms ease-in-out;
   /* overflow: hidden; */
   /* z-index: -1; */
-  background-size: 700%;
+  background-size: 500%;
 }
 #containerSection {
   display: contents;
-  height: 100vh;
+  height: 92vh;
   display: grid;
   place-items: center;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 }
 .content-1 {
   color: var(--text-1-1);
@@ -122,8 +122,9 @@ body {
 }
 .word:nth-child(4) {
   /* ES6 */
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row: 1 / span 1;
+  justify-self: end;
 }
 .word:nth-child(5) {
   /* WORDPRESS */
@@ -141,6 +142,7 @@ body {
 .word:nth-child(8) {
   /* LARAVEL */
   grid-row: 3 / span 1;
+  align-self: end;
 }
 .word:nth-child(9) {
   /* FIGMA */
@@ -153,7 +155,7 @@ body {
   /* PHP */
   grid-column: 4 / span 1;
   grid-row: 4 / span 1;
-  align-self: start;
+  justify-self: start;
 }
 
 /* ------------------------------------ */
