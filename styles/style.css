@@ -14,17 +14,19 @@
 
 :root {
   --blue-light: #23b6b1;
-  --blue-dark: #22a39f;
+  --blue-dark: #032bbb85;
   --pink-light: hsl(348deg 100% 76%);
   --pink-dark: hsl(343deg 100% 66%);
   --bkg-beige: #fdfbf3;
   --gray-light: #727878;
   --coal: #434242;
-  --black: #222222;
+  --primary-dark-transparent: rgb(2 15 33 / 97%);
+  --secondary-dark-transparent: rgba(40, 61, 104, 0.491);
+  --body-light-transparent: rgb(12, 21, 39);
+  --body-dark-transparent: rgb(2, 15, 33);
   --gray-lead: #888d8d;
   --font: 'Open Sans', sans-serif !important;
-  --black: rgb(47, 47, 47);
-  --gray: rgb(79, 79, 79);
+
   --white: aliceblue;
   --text-1-1: rgb(150 247 255); /* mob 3-2 , 1-1 */
   --text-1-2: rgb(201 250 41); /* web 1-2 , 1-1 */
@@ -52,6 +54,11 @@
 /*  -- general elements --  */
 html {
   scroll-behavior: smooth;
+  background: linear-gradient(
+    var(--body-light-transparent),
+    var(--body-dark-transparent)
+  );
+  background-size: 100%;
 }
 html,
 body,
@@ -165,7 +172,7 @@ p.lead {
 } */
 
 .scroll-down {
-  background-color: var(--black);
+  background-color: var(--primary-dark-transparent);
   /* height: 80px; */
   /* width: 120px; */
   display: block;
@@ -220,7 +227,7 @@ p.lead {
 
 /* -- Navbar */
 .navbar {
-  background-color: var(--black);
+  background-color: var(--secondary-dark-transparent);
   z-index: 999;
 }
 .navbar li a {
@@ -234,5 +241,5 @@ p.lead {
   color: var(--bkg-beige);
 }
 .navbar li.active {
-  background-color: var(--blue-dark);
+  background-color: var(--secondary-dark-transparent);
 }
