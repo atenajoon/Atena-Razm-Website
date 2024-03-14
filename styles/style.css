@@ -233,6 +233,6 @@ p.lead {
   font-weight: 600;
   color: var(--bkg-beige);
 }
-.navbar .active a {
-  background: var(--blue-dark);
+.navbar li.active {
+  background-color: var(--blue-dark);
 }
