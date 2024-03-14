@@ -42,7 +42,7 @@
   header .scroll-down {
     width: 100vw;
     right: 0;
-    height: 12vh;
+    height: 10vh;
   }
   .scroll-down .glyphicon {
     font-size: 1.2em;
@@ -70,8 +70,11 @@
   }
   .navbar .nav li {
     width: calc(100% / 4);
+    display: flex;
+    justify-content: center; /* Align content horizontally to the center */
+    align-items: center; /* Align content vertically to the center */
   }
-
+  
   #sec2 .sublink {
     text-align: center;
     color: var(--white);
@@ -205,7 +208,20 @@
     width: calc(100% / 4);
   }
 
-  
+  #profile-content > .col-3:nth-child(2) {
+    float: left;
+    width: 40vw;
+    margin: 70px 20px;
+    padding: 10px;
+    text-align: justify;
+  }
+  #profile-content > .col-3:nth-child(3) {
+    float: left;
+    width: 40vw;
+    margin: 70px 20px;
+    padding: 10px;
+    text-align: justify;
+  }
   #sec2 .h3 {
     /* text-align: center; */
     color: var(--white);
@@ -295,7 +311,10 @@
     
     .col-3 {
       float: left;
-      width: 30vw;
+      width: 25vw;
+      margin: 70px 20px;
+      padding: 10px;
+      text-align: justify;
     }
     /* .section-1 img {
       max-width: 100%;
@@ -354,7 +373,13 @@
     position: fixed;
     top: 20vh;
     }
-    
+    .col-3 {
+      float: left;
+      width: 25vw;
+      margin: 70px 20px;
+      padding: 10px;
+      text-align: justify;
+    }
     .container {
       padding: 1em 16em;
     }
