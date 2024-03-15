@@ -152,7 +152,7 @@ hr {
 small {
   color: var(--pink-light);
 }
-section {
+.section {
   position: relative;
   display: flex;
   flex-direction: column;
