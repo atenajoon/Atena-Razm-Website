@@ -24,6 +24,7 @@
   --secondary-dark-transparent: rgba(40, 61, 104, 0.491);
   --body-light-transparent: rgb(12, 21, 39);
   --body-dark-transparent: rgb(2, 15, 33);
+  --bkg-dark:rgb(2 15 33);
   --gray-lead: #888d8d;
   --font: 'Open Sans', sans-serif !important;
 
@@ -33,6 +34,12 @@
   --text-2-1: rgb(255, 242, 170);
   --text-3-1: rgb(103, 255, 255);
   --text-3-2: rgb(62, 248, 167); /* mob 3-2 , 1-1 */
+  
+  --text-primary: rgb(226 232 240 / var(--text-opacity));
+  
+  --text-opacity: 0.7;
+  --text-no-opacity: 1;
+  --bkg-opacity: 1;
 }
 
 ::-webkit-scrollbar {
@@ -54,10 +61,10 @@
 /*  -- general elements --  */
 html {
   scroll-behavior: smooth;
-  background: linear-gradient(
+  /* background: linear-gradient(
     var(--body-light-transparent),
     var(--body-dark-transparent)
-  );
+  ); */
   background-size: 100%;
 }
 html,
@@ -75,6 +82,10 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
+main {
+  color: var(--text-primary);
+  background-color: var(--bkg-dark);
+}
 h2,
 h3 {
   font-weight: 300;
@@ -86,7 +97,7 @@ ul {
   padding: 0px;
 }
 a {
-  color: var(--pink-dark);
+  color: var(--pink-light);
   text-decoration: none;
 }
 hr {
@@ -242,4 +253,5 @@ p.lead {
 }
 .navbar li.active {
   background-color: var(--secondary-dark-transparent);
+}
 }
