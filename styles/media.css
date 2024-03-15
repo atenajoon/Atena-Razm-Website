@@ -67,13 +67,17 @@
   .nav {
     display: flex;
     height: 10vh;
+    align-items: center;
   }
   .navbar .nav li {
+    height: 10vh;
     width: calc(100% / 4);
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Align content horizontally to the center */
     align-items: center; /* Align content vertically to the center */
   }
+  
   .content-container {
     display: flex;
     flex-direction: column-reverse;
@@ -232,9 +236,21 @@ font-size: 2.5rem;
   .nav {
     display: flex;
     height: 10vh;
+    align-items: center;
   }
-  .navbar .nav li {
+  /* .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20rem;
+  } */
+
+   .navbar .nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: calc(100% / 4);
+    height: 10vh;
   }
   .col-3-img {
     width: 60vw;
@@ -349,6 +365,15 @@ font-size: 2.5rem;
     position: absolute;
     top: 100vh;
   }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20rem;
+  }
+  .nav > a {
+    height: 10vh;
+  }
   /* toggle between position absolute and sticky classes with js */
   .sticky {
     position: fixed;
@@ -427,7 +452,15 @@ font-size: 2.5rem;
   .tab-content {
     margin-left: 120px;
   }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20rem;
+  }
+  .nav > a {
+    height: 10vh;
+  }
 }
 
 /*  End  */
-}
