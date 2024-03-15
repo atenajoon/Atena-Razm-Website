@@ -389,7 +389,7 @@
     /* text-align: justify; */
   }
   .container {
-    padding: 7% 7% 0;
+    padding: 7% 0 0;
     align-self: flex-start;
     line-height: 0.7;
   }
