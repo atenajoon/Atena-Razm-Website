@@ -156,7 +156,7 @@ small {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 .center {
   display: flex;
