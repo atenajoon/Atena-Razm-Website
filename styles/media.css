@@ -87,7 +87,7 @@
     /* float: ; */
     width: 80vw;
     /* margin: 70px 20px; */
-    padding: 10px;
+    padding: 1.5rem 2rem;
     text-align: center;
   }
   .col-3-img {
@@ -255,7 +255,7 @@ font-size: 2.5rem;
   .col-3-img {
     width: 60vw;
     text-align: center;
-    padding: 3rem 0 0;
+    padding: 1.5rem 2rem;
   }
   .content-container {
     display: flex;
@@ -386,6 +386,7 @@ font-size: 2.5rem;
   }
   .col-3 {
   width: 36vw;
+  padding: 1.5rem 2rem;
   }
   .media-container {
     padding-top: 2rem;
