@@ -164,6 +164,9 @@ small {
   justify-items: center;
   flex-direction: column;
 }
+.text-container {
+  align-self: center;
+}
 /* -- general classes and ids */
 /* .container {
   position: relative;
