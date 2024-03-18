@@ -78,9 +78,11 @@
     align-items: center; /* Align content vertically to the center */
   }
   
-  .content-container {
-    display: flex;
+  .content-container-reverse {
+    align-items: center;
     flex-direction: column-reverse;
+  }
+  .content-container {
     align-items: center;
   }
   .col-3 {
@@ -96,6 +98,9 @@
     /* margin: 70px 20px; */
     padding: 3rem 0 0;
     text-align: center;
+  }
+  .col-3-img img {
+    width: 75%;
   }
   #sec2 .sublink {
     text-align: center;
@@ -125,9 +130,9 @@ font-size: 2.5rem;
   .lead {
     display: none;
   }
-  section {
+  /* section {
     height: 85vh;
-  }
+  } */
   .section-1 > div {
     margin-top: 60px;
   }
@@ -140,6 +145,9 @@ font-size: 2.5rem;
     text-align: center;
   }
   .content-container > div > h3 {
+    text-align: center;
+  }
+  .content-container-reverse > div > h3 {
     text-align: center;
   }
   .section-3 {
@@ -257,17 +265,24 @@ font-size: 2.5rem;
     text-align: center;
     padding: 1.5rem 2rem;
   }
-  .content-container {
+  .col-3-img img {
+    width: 55%;
+  }
+  /* .content-container {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+  } */
+  .content-container-reverse {
+    align-items: center;
+    flex-direction: column-reverse;
   }
   .media-container {
     padding-bottom: 2rem;
   }
-  section {
+  /* section {
     height: 85vh;
-  }
+  } */
   #sec2 .h3 {
     /* text-align: center; */
     color: var(--white);
@@ -302,7 +317,7 @@ font-size: 2.5rem;
     max-width: 50%;
     margin: 1em 0;
   } */
-  .content-container p {
+  .content-container-reverse p {
     text-align: left;
   }
   /* .section-3 {
@@ -384,6 +399,9 @@ font-size: 2.5rem;
     padding: 0;
     width: 28vw;
   }
+  .col-3-img img {
+    width: 75%;
+  }
   .col-3 {
   width: 36vw;
   padding: 1.5rem 2rem;
@@ -391,23 +409,23 @@ font-size: 2.5rem;
   .media-container {
     padding-top: 2rem;
   }
-  .content-container:after {
+  .content-container-reverse:after {
     clear: both;
     content: '';
     display: block;
   }
-  section {
+  /* section {
     height: 85vh;
-  }
+  } */
   .tab-content {
     margin-left: 60px;
   }
   .wrapper {
     padding-top: 10%;
   }
-  section {
-    height: 85vh;
-  }
+  /* section {
+    height: 70vh;
+  } */
 }
 
 /* X-Large devices (X-laptops/desktops, 1281px and up) */
@@ -461,6 +479,9 @@ font-size: 2.5rem;
   }
   .nav > a {
     height: 10vh;
+  }
+  .col-3-img img {
+    width: 60%;
   }
 }
 

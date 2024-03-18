@@ -175,9 +175,16 @@ small {
   text-align: center;
   max-width: 100%;
 } */
-.content-container {
+
+.content-container-reverse {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.content-container {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
   justify-content: space-between;
 }
 .col-3 {
@@ -190,9 +197,13 @@ small {
 
 }
 /* -- profile image -- */
+.col-3-img {
+  display: flex;
+  align-items: center;
+}
 .col-3-img img {
   box-shadow: 1px 1px 2px #39383c, 0 0 25px 1px #5e5e8d, 0 0 5px darkblue;
-  width: 75%;
+  /* width: 75%; */
   height: auto;
   transition: transform 0.6s;
   border-width: 0.5px;
