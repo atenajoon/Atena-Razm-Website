@@ -1,6 +1,8 @@
 @import url('./media.css');
 @import url('./tabs.css');
 @import url('./landingPageShapes.css');
+@import url('./profile-sec.css');
+@import url('./project-sec.css');
 
 /* 
 -- variables
@@ -129,6 +131,8 @@ a {
   float: left;
   /* padding: 3rem 0 0; */
   text-align: justify;
+  transition: background-color .6s, box-shadow .6s;
+  border-radius: 0.7rem;
 }
 
 .media {
@@ -187,14 +191,9 @@ small {
   /* align-items: center; */
   justify-content: space-between;
 }
-.col-3 {
-  transition: background-color .6s, box-shadow .6s;
-  border-radius: 0.7rem;
-}
 .col-3:hover {
   box-shadow: inset 0 1px 0 0 rgba(148, 163, 184, .1);
-    background-color: rgb(41 62 90 / 50%);
-
+  background-color: rgb(41 62 90 / 50%);
 }
 /* -- profile image -- */
 .col-3-img {
