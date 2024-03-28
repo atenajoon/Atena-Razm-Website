@@ -3,6 +3,7 @@
 @import url('./landingPageShapes.css');
 @import url('./profile-sec.css');
 @import url('./project-sec.css');
+@import url('./work-sec.css');
 
 /* 
 -- variables
@@ -44,6 +45,10 @@
   --text-opacity-bold: 1;
   --text-no-opacity: 1;
   --bkg-opacity: 1;
+  
+  --text-colorfull: rgb(142 177 222 / 81%);
+  --text-colorfull-bright: rgb(156 207 255);
+  --skills-bg: rgb(19 65 125 / 63%);
 }
 
 ::-webkit-scrollbar {
