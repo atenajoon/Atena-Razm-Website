@@ -11,20 +11,20 @@
 }
 .profile-col-3-img img {
   box-shadow: 1px 1px 2px #39383c, 0 0 25px 1px #5e5e8d, 0 0 5px darkblue;
-  /* width: 75%; */
+  width: 17rem;
   height: auto;
-  transition: transform 0.6s;
+  /* transition: transform 0.6s; */
   border-width: 0.5px;
   border-color: var(--coal);
   border-style: solid;
   border-radius: 10%;
 }
-.profile-col-3-img img:hover {
+/* .profile-col-3-img img:hover {
   -webkit-filter: sepia(0%);
   filter: sepia(0%);
   border-color: var(--bkg-beige);
   transform: scale(1.1);
-}
+} */
 .media-container {
   padding-bottom: 2rem;
 }
@@ -50,9 +50,6 @@
     justify-content: center;
     align-items: center;
   }
-  .profile-col-3-img img {
-    width: 75%;
-  }
 }
 
 /* Large devices (landscape tablets, 768px and up) */
@@ -63,9 +60,6 @@
   .profile-col-3-img {
     text-align: center;
     padding: 3rem 0 0;
-  }
-  .profile-col-3-img img {
-    width: 100%;
   }
 }
 
@@ -81,9 +75,6 @@
   .profile-col-3-img {
     padding: 0;
     width: 28vw;
-  }
-  .profile-col-3-img img {
-    width: 75%;
   }
   .profile-col-3 {
     width: 36vw;
