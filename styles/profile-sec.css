@@ -34,7 +34,7 @@
 .profile-content-container {
   display: flex;
   justify-content: space-evenly;
-  margin: 4rem 0;
+  /* margin: 4rem 0; */
 }
 
 /* Small devices (mobiles, up to 767px) */
