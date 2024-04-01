@@ -53,10 +53,10 @@ const contentArray = [
 
 let bgIndex = 1;
 function changeBackground() {
-  console.log("bgIndex: ", bgIndex);
+  console.log('bgIndex: ', bgIndex);
   const combination = configCombinations[bgIndex];
   shapeContainer.style.marginTop = bgIndex === 1 ? '5rem' : '2rem';
- 
+
   backgroundDiv.style.backgroundPosition = combination.position;
   wrapper.dataset.configuration = combination.configuration;
   wrapper.dataset.roundness = combination.roundness;
@@ -78,8 +78,6 @@ function changeContent() {
       // Apply fade-out effect by adding 'hide' class
       div.classList.add('hide');
 
-
-      
       // Schedule content update after the fade-out transition completes
       setTimeout(function () {
         // Update content
@@ -102,12 +100,12 @@ function changeContent() {
         //     console.log("index: ", bgIndex);
         //   break;
         // }
-  
-      //   if(bgIndex !== 0)
-      //   content1.forEach((word) => (word.style.color = 'var(--text-2-1)'));
-      // else
-      //   content1.forEach((word) => (word.style.color = 'var(--text-1-2)'));
-  
+
+        //   if(bgIndex !== 0)
+        //   content1.forEach((word) => (word.style.color = 'var(--text-2-1)'));
+        // else
+        //   content1.forEach((word) => (word.style.color = 'var(--text-1-2)'));
+
         // Apply fade-in effect by removing 'hide' class
         div.classList.remove('hide');
       }, 700); // Wait for 500 milliseconds (same duration as transition)
@@ -119,7 +117,7 @@ function changeContent() {
 
 setInterval(() => {
   changeBackground();
-}, 2000);
+}, 3000);
 
 wrapper.dataset.configuration = 1;
 wrapper.dataset.roundness = 1;
