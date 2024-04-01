@@ -14,18 +14,6 @@ const configCombinations = [
 //  3 content configs
 const contentArray = [
   [
-    'REACT NATIVE',
-    'IOS',
-    'ANDROID',
-    'JS',
-    'TESTFLIGHT',
-    '',
-    'JENKINS',
-    'SONAR CLOUD',
-    'UX/UI',
-    'GIT',
-  ],
-  [
     'SONAR CLOUD',
     'STEAM',
     'UNITY',
@@ -36,6 +24,18 @@ const contentArray = [
     'ANDROID',
     'UNREAL',
     'C#',
+  ],
+  [
+    'REACT NATIVE',
+    'IOS',
+    'ANDROID',
+    'JS',
+    'TESTFLIGHT',
+    '',
+    'JENKINS',
+    'SONAR CLOUD',
+    'UX/UI',
+    'GIT',
   ],
   [
     'HTML',
@@ -119,7 +119,7 @@ function changeContent() {
 
 setInterval(() => {
   changeBackground();
-}, 4000);
+}, 2000);
 
 wrapper.dataset.configuration = 1;
 wrapper.dataset.roundness = 1;
