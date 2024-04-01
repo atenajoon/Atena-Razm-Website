@@ -1,40 +1,46 @@
 #project-sec {
 }
 
-.work-content-col {
+.content-col {
   float: left;
   text-align: justify;
 }
-.work-date-col {
+.title-col {
   display: flex;
   align-items: center;
   color: var(--text-colorfull);
 }
-.work-date-col p {
-  /* box-shadow: 1px 1px 2px #39383c, 0 0 25px 1px #5e5e8d, 0 0 5px darkblue;
-  height: auto; */
-  transition: transform 0.3s;
-  color: var(--text-colorfull);
-}
-.project-title {
-  margin: 0 0 3rem 0;
-}
-.work-content-title {
+.content-title {
   font-size: 1.1em;
   color: var(--text-primary-bold);
   text-align: center;
   transition: color 0.3s;
 }
-.work-content-col > p {
+.content-col > p {
   transition: color 0.3s;
 }
-.skills-container {
+.title-col {
+  display: flex;
+  align-items: center;
+}
+.title-col img {
+  box-shadow: 1px 1px 2px #39383c, 0 0 25px 1px #5e5e8d, 0 0 5px darkblue;
+  height: auto;
+  transition: transform 0.3s;
+  border-width: 0.5px;
+  border-color: var(--coal);
+  border-style: solid;
+  border-radius: 10%;
+  width: 13rem;
+}
+
+.items-container {
   display: flex;
   justify-content: flex-start;
   align-content: space-evenly;
   flex-wrap: wrap;
 }
-.work-content-skills {
+.content-items {
   display: flex;
   align-items: center;
   color: var(--text-colorfull-bright);
@@ -46,11 +52,13 @@
   font-weight: 600;
 }
 .work-content-container {
+  align-items: baseline;
+}
+.content-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   transition: background-color 0.3s, box-shadow 0.3s;
-  align-items: baseline;
 }
 
 /* Small devices (mobiles, up to 767px) */
@@ -60,7 +68,7 @@
     display: flex;
     justify-content: center;
   }
-  .work-content-container {
+  .content-container {
     flex-direction: column-reverse;
     padding: 1.2rem 1.5rem 0 0;
     margin: 2rem 0;
@@ -68,15 +76,15 @@
     box-shadow: inset 0 1px 0 0 rgba(148, 163, 184, 0.1);
     background-color: rgb(41 62 90 / 50%);
   }
-  .work-content-col {
+  .content-col {
     width: 80vw;
     padding: 1.5rem 2rem;
     text-align: justify;
   }
-  .work-date-col {
+  .title-col {
     width: 40vw;
   }
-  .work-date-col p {
+  .title-col p {
     width: 75%;
   }
 }
@@ -86,27 +94,27 @@
   .media-container {
     padding-bottom: 2rem;
   }
-  .work-content-container {
+  .content-container {
     width: 100%;
     padding: 1.2rem 1.5rem;
     margin: 2rem 0;
     border-radius: 0.7rem;
   }
-  .work-content-container:hover {
+  .content-container:hover {
     box-shadow: inset 0 1px 0 0 rgba(148, 163, 184, 0.1);
     background-color: rgba(19, 39, 65, 0.727);
   }
-  .work-content-container:hover .work-content-title {
+  .content-container:hover .work-content-title {
     color: var(--text-title-hover);
   }
-  .work-content-container:hover .work-content-col > p {
+  .content-container:hover .content-col > p {
     color: rgba(199, 211, 227, 0.85);
   }
-  .work-date-col {
+  .title-col {
     width: 100vw;
     text-align: center;
   }
-  .work-date-col p {
+  .title-col p {
     width: 75%;
   }
 }
@@ -116,38 +124,38 @@
   .media-container {
     padding-top: 2rem;
   }
-  .work-content-container {
-    width: 75%;
+  .content-container {
+    width: 63vw; /* 75% */
     padding: 1.2rem;
     margin: 2rem 0 0 7rem;
     border-radius: 0.7rem;
   }
-  .work-content-container:hover {
+  .content-container:hover {
     box-shadow: inset 0 1px 0 0 rgba(148, 163, 184, 0.1);
     background-color: rgba(19, 39, 65, 0.727);
   }
-  .work-content-container:hover .work-content-title {
+  .content-container:hover .work-content-title {
     color: var(--text-title-hover);
   }
-  .work-content-container:hover .work-content-col > p {
+  .content-container:hover .content-col > p {
     color: rgba(199, 211, 227, 0.85);
   }
-  .work-content-col {
-    width: 40vw;
+  .content-col {
+    width: 39rem;
   }
-  .work-date-col {
+  .title-col {
     float: right;
     padding: 0;
-    width: 17vw;
+    width: 17rem;
   }
-  .work-date-col p {
+  .title-col p {
     width: 75%;
   }
 }
 
 /* X-Large devices (X-laptops/desktops, 1281px and up) */
 @media only screen and (min-width: 1282px) {
-  .work-date-col p {
+  .title-col p {
     /* width: 60%; */
   }
 }

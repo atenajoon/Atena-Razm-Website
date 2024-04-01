@@ -136,7 +136,7 @@ ul {
   padding: 0px;
 }
 a {
-  color: var(--text-1-1);
+  /* color: var(--text-1-1); */
   text-decoration: none;
 }
 .col-3 {
