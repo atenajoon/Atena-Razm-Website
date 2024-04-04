@@ -71,7 +71,9 @@
 .resume-footer {
   margin-top: 2rem;
 }
-
+#contact-sec {
+  margin: 0;
+}
 /* Small devices (mobiles, up to 767px) */
 @media only screen and (max-width: 767px) {
   .content-container {
@@ -111,6 +113,9 @@
   .project-title-col {
     justify-content: center;
     padding: 2rem 0 1rem;
+  }
+  #contact-sec {
+    flex-direction: column;
   }
 }
 

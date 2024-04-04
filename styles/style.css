@@ -180,11 +180,9 @@ small {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 4rem 0 0 0;
+  margin: 3rem 0 0 0;
 }
-#contact-sec {
-  margin: 0;
-}
+
 .center {
   display: flex;
   align-items: center;
