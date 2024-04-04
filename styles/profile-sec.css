@@ -51,9 +51,10 @@
 }
 .resume {
   display: flex;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.4rem;
   padding-top: 1rem;
+  color: var(--text-primary-bold);
 }
 .resume-container:hover .resume,
 .resume-container:hover .resume-arrow-icon {
