@@ -52,21 +52,21 @@
   --yellow-1: rgba(255, 196, 0, var(--opacity-1));
   --yellow-2: rgb(255, 201, 6);
   --yellow-3: rgba(189, 149, 18, 0.942);
-  
+
   --text-title-hover: rgba(253, 204, 171, var(--opacity-05));
   --bkg-beige: #fdfbf3;
 
-  --clr-torquoise: rgb(94 234 212/1);
+  --torquoise-1: rgb(94 234 212/1);
+  --torquoise-2: rgba(103, 255, 255, var(--opacity-1));
   --green-1: rgba(16, 162, 123, var(--opacity-1));
   --green-2: rgb(155, 160, 25);
 
-  --red-1:rgba(255, 80, 144);
+  --red-1: rgba(255, 80, 144);
   /* --red-1: rgba(199, 0, 30, var(--no-opacity)); */
   /* --purple-1: rgb(126, 40, 249, var(--opacity-1)); */
   --purple-1: rgb(142, 97, 247);
   --purple-2: rgba(188, 33, 255, 0.957);
 
-  
   /* content colors - text & icons */
   /* --white-1: rgb(199 211 227 / var(--opacity-2)); */
   /* --white-1: rgba(199, 211, 227, 0.7);
@@ -180,14 +180,6 @@ a {
   /* color: var(--text-1-1); */
   text-decoration: none;
 }
-.gray-icon {
-  color: var(--white-1);
-  transition: color 0.3s ease;
-}
-.media {
-  padding: 0 0.4rem;
-  font-size: 2.5rem;
-}
 
 hr {
   border: 0;
@@ -224,17 +216,6 @@ small {
   max-width: 100%;
 } */
 
-.content-container-reverse {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.content-container {
-  display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  justify-content: space-between;
-}
 
 .bkg-dark > hr {
   margin: 2em;
@@ -255,4 +236,105 @@ small {
   );
   background-size: 100%;
 } */
+
+.my-linkedin {
+  color: var(--torquoise-2);
+}
+.my-github {
+  color: var(--purple-2);
+}
+.my-email {
+  color: var(--red-1);
+}
+.my-controller {
+  color: var(--text-1-2);
+}
+.my-docs {
+  color: var(--yellow-2);
+}
+.my-external-link {
+  color: var(--text-3-2);
+}
+
+.content-container:hover .gray-icon.my-linkedin {
+  color: var(--torquoise-2);
+}
+.content-container:hover .gray-icon.my-github {
+  color: var(--purple-2);
+}
+.content-container:hover .gray-icon.my-email {
+  color: var(--red-1);
+}
+.content-container:hover .gray-icon.my-controller {
+  color: var(--text-1-2);
+}
+.content-container:hover .gray-icon.my-docs {
+  color: var(--yellow-2);
+}
+.content-container:hover .gray-icon.my-external-link {
+  color: var(--text-3-2);
+}
+
+.gray-icon.my-linkedin:hover {
+  color: var(--torquoise-2);
+}
+.gray-icon.my-github:hover {
+  color: var(--purple-2);
+}
+.gray-icon.my-email:hover {
+  color: var(--red-1);
+}
+
+.resume-footer {
+  margin-top: 2rem;
+}
+
+/* Small devices (mobiles, up to 767px) */
+@media only screen and (max-width: 767px) {
+  .media {
+    padding: 0 0.4rem;
+    font-size: 2.2rem;
+  }
+  #content-icon-docs,
+  #content-icon-external-link {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .media {
+    padding: 0 0.4rem;
+    font-size: 2.3rem;
+  }
+  #content-icon-docs {
+    font-size: 2.1rem;
+  }
+  .gray-icon {
+    color: var(--white-1);
+    transition: color 0.3s ease;
+  }
+}
+
+/* Large devices (laptops/desktops, 1100px and up) */
+@media only screen and (min-width: 1101px) {
+  .media {
+    padding: 0 0.4rem;
+    font-size: 2.3rem;
+  }
+  #content-icon-docs {
+    font-size: 2.1rem;
+  }
+  .gray-icon {
+    color: var(--white-1);
+    transition: color 0.3s ease;
+  }
+}
+
+/* X-Large devices (X-laptops/desktops, 1281px and up) */
+@media only screen and (min-width: 1282px) {
+}
+
+/* X-Large devices (X-laptops/desktops, 1281px and up) */
+@media only screen and (min-width: 1282px) {
 }

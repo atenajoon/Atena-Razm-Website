@@ -43,7 +43,7 @@
 }
 .resume-container:hover .resume,
 .resume-container:hover .resume-arrow-icon {
-  color: var(--clr-torquoise);
+  color: var(--torquoise-1);
 }
 .arrow-icon {
   width: 1.5rem;
@@ -83,6 +83,10 @@
 
   .resume-container {
     justify-content: center;
+  }
+  .resume,
+  .resume-arrow-icon {
+    color: var(--torquoise-1);
   }
 }
 
