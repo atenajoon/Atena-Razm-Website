@@ -8,7 +8,7 @@
 .title-col {
   display: flex;
   align-items: center;
-  color: var(--text-colorfull);
+  color: var(--blue-1);
 }
 .content-title {
   color: var(--white-2);
@@ -42,7 +42,7 @@
 .content-items {
   display: flex;
   align-items: center;
-  color: var(--text-colorfull-bright);
+  color: var(--blue-2);
   background-color: var(--skills-bg);
   border-radius: 0 0 0 1.2rem;
   margin: 0.2rem;
@@ -90,7 +90,7 @@
     background-color: rgb(41 62 90 / 15%);
   }
   .project-content-container {
-    border-radius: 0.7rem ;
+    border-radius: 0.7rem;
     background-color: rgb(41 62 90 / 15%);
   }
   .content-col {
@@ -212,12 +212,13 @@
     justify-content: flex-start;
   }
 
-/* X-Large devices (X-laptops/desktops, 1281px and up) */
-@media only screen and (min-width: 1282px) {
-  .title-col p {
-    /* width: 60%; */
-  }
-  .content-container {
-    width: 52vw;
+  /* X-Large devices (X-laptops/desktops, 1281px and up) */
+  @media only screen and (min-width: 1282px) {
+    .title-col p {
+      /* width: 60%; */
+    }
+    .content-container {
+      width: 52vw;
+    }
   }
 }

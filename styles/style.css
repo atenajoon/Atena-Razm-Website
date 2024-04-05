@@ -29,11 +29,16 @@
   --white-2: rgba(240, 248, 255, 0.82);
   --white-3: rgb(215, 228, 247);
 
+  --blue-1: rgba(142, 177, 222, 0.82);
+  --blue-2: rgb(171, 211, 249);
+  --blue-3: rgb(140, 206, 253);
+  
+  
   --text-opacity: 0.7;
   --text-opacity-bold: 1;
+  --text-no-opacity: 1;
 
-  --text-colorfull: rgb(142 177 222 / 81%);
-  --text-colorfull-bright: rgb(171, 211, 249);
+
 
   --skills-bg: rgb(25 69 127 / 49%);
   --text-title-hover: rgba(253, 204, 171, 0.919);
@@ -54,7 +59,7 @@
   --gray-lead: #888d8d;
   --font: 'Open Sans', sans-serif !important;
 
-  --text-no-opacity: 1;
+
   --bkg-opacity: 1;
 
   /* --skills-bg: rgb(19 65 125 / 63%); */
