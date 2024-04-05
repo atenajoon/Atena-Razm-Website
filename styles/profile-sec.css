@@ -73,7 +73,7 @@
 }
 .arrow-icon,
 .resume-arrow-icon {
-  transition: transform 0.05s ease, color 0.05s ease;
+  transition: transform 0.2s ease;
 }
 .resume-container:hover .arrow-icon {
   transform: translateX(0.3rem) translateY(-0.3rem);
