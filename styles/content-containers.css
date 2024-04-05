@@ -59,14 +59,57 @@
   justify-content: center;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
-.content-icons media {
-  font-size: 2.5rem;
-  margin-left: 1rem;
-  opacity: var(--opacity-2);
-}
 #content-icon-docs {
   font-size: 2.1rem;
 }
+.my-linkedin {
+  color: var(--blue-3);
+}
+.my-github {
+  color: var(--purple-1);
+}
+.my-email {
+  color: var(--red-1);
+}
+.my-controller {
+  color: var(--green-1);
+}
+.my-docs {
+  color: var(--yellow-1);
+}
+.my-external-link {
+  color: var(--white-2);
+}
+
+.content-container:hover .gray-icon.my-linkedin {
+  color: var(--blue-3);
+}
+.content-container:hover .gray-icon.my-github {
+  color: var(--purple-1);
+}
+.content-container:hover .gray-icon.my-email {
+  color: var(--red-1);
+}
+.content-container:hover .gray-icon.my-controller {
+  color: var(--green-1);
+}
+.content-container:hover .gray-icon.my-docs {
+  color: var(--yellow-1);
+}
+.content-container:hover .gray-icon.my-external-link {
+  color: var(--white-2);
+}
+
+.gray-icon.my-linkedin:hover {
+  color: var(--blue-3);
+}
+.gray-icon.my-github:hover {
+  color: var(--purple-1);
+}
+.gray-icon.my-email:hover {
+  color: var(--red-1);
+}
+
 .resume-footer {
   margin-top: 2rem;
 }

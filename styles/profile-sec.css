@@ -30,24 +30,6 @@
   align-items: center;
   padding-bottom: 1rem;
 }
-.my-linkedin {
-  color: var(--blue-3);
-}
-.my-github {
-  color: var(--purple-1);
-}
-.my-docs {
-  color: var(--yellow-1);
-}
-.my-email {
-  color: var(--red-1);
-}
-.my-external-link {
-  color: var(--white-2);
-}
-.my-controller {
-  color: var(--green-1);
-}
 .resume-container {
   display: flex;
   align-items: center;

@@ -57,7 +57,7 @@
   --green-1: rgba(16, 162, 123, var(--opacity-1));
 
   /* --red-1:rgba(255, 80, 144); */
-  --red-1: rgba(199, 0, 30, var(--opacity-1));
+  --red-1: rgba(199, 0, 30, var(--no-opacity));
   /* --purple-1: rgb(126, 40, 249, var(--opacity-1)); */
   --purple-1: rgb(142, 97, 247);
 
@@ -175,19 +175,15 @@ a {
   /* color: var(--text-1-1); */
   text-decoration: none;
 }
-
+.gray-icon {
+  color: var(--white-1);
+  transition: color 0.3s ease;
+}
 .media {
-  /* color: var(--text-1-1);
-  text-decoration: none; */
   padding: 0 0.4rem;
-  opacity: var(--opacity-2);
-  transition: transform 0.3s;
   font-size: 2.5rem;
 }
-.media:hover {
-  transform: scale(1.1);
-  opacity: var(--text-no-opacity);
-}
+
 hr {
   border: 0;
   height: 1px;
@@ -254,3 +250,4 @@ small {
   );
   background-size: 100%;
 } */
+}
