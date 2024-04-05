@@ -124,6 +124,9 @@
     justify-content: center; /* Align content horizontally to the center */
     align-items: center; /* Align content vertically to the center */
   }
+  .resume-container-footer {
+    justify-content: center;
+  }
 }
 
 /* Large devices (landscape tablets, 768px and up) */
@@ -173,6 +176,9 @@
     width: calc(100% / 4);
     height: 10vh;
   }
+  .resume-container-footer {
+    justify-content: flex-start;
+  }
 }
 
 /* Large devices (laptops/desktops, 1100px and up) */
@@ -220,8 +226,13 @@
     position: fixed;
     top: 20vh;
   }
-}
-
-/* X-Large devices (X-laptops/desktops, 1281px and up) */
-@media only screen and (min-width: 1282px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20rem;
+  }
+  .nav > a {
+    height: 10vh;
+  }
 }
