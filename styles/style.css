@@ -50,16 +50,21 @@
 
   /* --yellow-1: #ffef92; */
   --yellow-1: rgba(255, 196, 0, var(--opacity-1));
+  --yellow-2: rgb(255, 201, 6);
+  --yellow-3: rgba(189, 149, 18, 0.942);
+  
   --text-title-hover: rgba(253, 204, 171, var(--opacity-05));
   --bkg-beige: #fdfbf3;
 
   --clr-torquoise: rgb(94 234 212/1);
   --green-1: rgba(16, 162, 123, var(--opacity-1));
+  --green-2: rgb(155, 160, 25);
 
-  /* --red-1:rgba(255, 80, 144); */
-  --red-1: rgba(199, 0, 30, var(--no-opacity));
+  --red-1:rgba(255, 80, 144);
+  /* --red-1: rgba(199, 0, 30, var(--no-opacity)); */
   /* --purple-1: rgb(126, 40, 249, var(--opacity-1)); */
   --purple-1: rgb(142, 97, 247);
+  --purple-2: rgba(188, 33, 255, 0.957);
 
   
   /* content colors - text & icons */

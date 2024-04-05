@@ -63,7 +63,7 @@
   font-size: 2.1rem;
 }
 .my-linkedin {
-  color: var(--blue-3);
+  color: var(--text-3-1);
 }
 .my-github {
   color: var(--purple-1);
@@ -82,29 +82,29 @@
 }
 
 .content-container:hover .gray-icon.my-linkedin {
-  color: var(--blue-3);
+  color: var(--text-3-1);
 }
 .content-container:hover .gray-icon.my-github {
-  color: var(--purple-1);
+  color: var(--purple-2);
 }
 .content-container:hover .gray-icon.my-email {
   color: var(--red-1);
 }
 .content-container:hover .gray-icon.my-controller {
-  color: var(--green-1);
+  color: var(--text-1-2);
 }
 .content-container:hover .gray-icon.my-docs {
-  color: var(--yellow-1);
+  color: var(--yellow-2);
 }
 .content-container:hover .gray-icon.my-external-link {
-  color: var(--white-2);
+  color: var(--text-3-2);
 }
 
 .gray-icon.my-linkedin:hover {
-  color: var(--blue-3);
+  color: var(--text-3-1);
 }
 .gray-icon.my-github:hover {
-  color: var(--purple-1);
+  color: var(--purple-2);
 }
 .gray-icon.my-email:hover {
   color: var(--red-1);
