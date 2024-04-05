@@ -15,6 +15,30 @@
 */
 
 :root {
+  /* new color pallet */
+  /* landingPageShapes colors */
+  --text-1-1: rgb(170, 246, 252); /* mob 3-2 , 1-1 */
+  --text-1-2: rgb(201 250 41); /* web 1-2 , 1-1 */
+  --text-2-1: rgb(255, 242, 170);
+  --text-3-1: rgb(103, 255, 255);
+  --text-3-2: rgb(62, 248, 167); /* mob 3-2 , 1-1 */
+
+  /* content colors - text & icons */
+  /* --white-1: rgb(199 211 227 / var(--text-opacity)); */
+  --white-1: rgba(199, 211, 227, 0.7);
+  --white-2: rgba(240, 248, 255, 0.82);
+  --white-3: rgb(215, 228, 247);
+
+  --text-opacity: 0.7;
+  --text-opacity-bold: 1;
+
+  --text-colorfull: rgb(142 177 222 / 81%);
+  --text-colorfull-bright: rgb(171, 211, 249);
+
+  --skills-bg: rgb(25 69 127 / 49%);
+  --text-title-hover: rgba(253, 204, 171, 0.919);
+  --clr-torquoise: rgb(94 234 212/1);
+
   --blue-light: #a0b623;
   --blue-dark: #032bbb85;
   --pink-light: hsl(348deg 100% 76%);
@@ -30,27 +54,10 @@
   --gray-lead: #888d8d;
   --font: 'Open Sans', sans-serif !important;
 
-  --white: rgba(240, 248, 255, 0.82);
-  --text-1-1: rgb(170, 246, 252); /* mob 3-2 , 1-1 */
-  --text-1-2: rgb(201 250 41); /* web 1-2 , 1-1 */
-  --text-2-1: rgb(255, 242, 170);
-  --text-3-1: rgb(103, 255, 255);
-  --text-3-2: rgb(62, 248, 167); /* mob 3-2 , 1-1 */
-
-  --text-primary: rgb(199 211 227 / var(--text-opacity));
-  --text-primary-bold: rgb(215 228 247 / var(--text-opacity-bold));
-
-  --text-opacity: 0.7;
-  --text-opacity-bold: 1;
   --text-no-opacity: 1;
   --bkg-opacity: 1;
 
-  --text-colorfull: rgb(142 177 222 / 81%);
-  --text-colorfull-bright: rgb(171, 211, 249);
   /* --skills-bg: rgb(19 65 125 / 63%); */
-  --skills-bg: rgb(25 69 127 / 49%);
-  --text-title-hover: rgba(253, 204, 171, 0.919);
-  --clr-torquoise: rgb(94 234 212/1);
 }
 
 ::-webkit-scrollbar {
@@ -100,7 +107,7 @@ body {
   line-height: 1.6;
   height: 100vh;
   overflow-x: hidden;
-  color: var(--text-primary);
+  color: var(--white-1);
   background-color: var(--bkg-dark);
   display: flex;
   flex-direction: column;
@@ -124,7 +131,7 @@ p {
   margin: 0.4rem 0;
 }
 .bold {
-  color: var(--text-primary-bold);
+  color: var(--white-2);
 }
 .h1 {
   font-size: 2.6rem;
@@ -355,4 +362,5 @@ p.lead {
 }
 .navbar li.active {
   background-color: var(--secondary-dark-transparent);
+}
 }

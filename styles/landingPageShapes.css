@@ -467,7 +467,7 @@ body {
 } */
 /* 
 #wrapper[data-configuration='3'] > .shape:nth-child(1) {
-  background-color: var(--white);
+  background-color: var(--white-2);
   top: 20%;
   left: 20%;
   width: 30%;
@@ -504,7 +504,7 @@ body {
   z-index: 1;
 } */
 /* #wrapper[data-configuration='2'] > .shape:nth-child(6) {
-  color: var(--white);
+  color: var(--white-2);
   top: 5%;
   left: 20%;
   width: 60%;
@@ -512,7 +512,7 @@ body {
   z-index: 3;
 } */
 /* #wrapper[data-configuration='2'] > .shape:nth-child(1) {
-  background-color: var(--white);
+  background-color: var(--white-2);
   top: 50%;
   left: 40%;
   width: 70%;

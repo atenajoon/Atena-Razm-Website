@@ -11,7 +11,7 @@
   color: var(--text-colorfull);
 }
 .content-title {
-  color: var(--white);
+  color: var(--white-2);
   text-align: center;
   transition: color 0.3s;
 }
@@ -220,6 +220,4 @@
   .content-container {
     width: 52vw;
   }
-}
-}
 }

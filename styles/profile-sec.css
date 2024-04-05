@@ -54,7 +54,7 @@
   font-weight: 600;
   font-size: 1.4rem;
   padding-top: 1rem;
-  color: var(--text-primary-bold);
+  color: var(--white-3);
 }
 .resume-container:hover .resume,
 .resume-container:hover .resume-arrow-icon {
@@ -68,7 +68,7 @@
 .resume-arrow-icon {
   display: flex;
   align-items: flex-end;
-  color: var(--text-primary-bold);
+  color: var(--white-3);
   padding-left: 0.3rem;
 }
 .arrow-icon,
