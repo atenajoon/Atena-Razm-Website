@@ -1,0 +1,227 @@
+/* -- header */
+
+.header {
+  height: 100vh;
+  width: 100vw;
+}
+.scroll-down {
+  background-color: var(--blue-6-transparent);
+  /* height: 80px; */
+  /* width: 120px; */
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  /* right: 3%; */
+  text-align: center;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+  filter: drop-shadow(0 0 0.75rem rgb(252, 252, 252));
+}
+.scroll-down .glyphicon {
+  color: #ffffff;
+  padding-right: 2px;
+  padding-top: 20px;
+  -webkit-animation-name: wiggle;
+  animation-name: wiggle;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+@-webkit-keyframes wiggle {
+  0% {
+    padding-top: 20px;
+  }
+  50% {
+    padding-top: 28px;
+  }
+  100% {
+    padding-top: 20px;
+  }
+}
+@keyframes wiggle {
+  0% {
+    padding-top: 20px;
+  }
+  50% {
+    padding-top: 28px;
+  }
+  100% {
+    padding-top: 20px;
+  }
+}
+.glyphicon {
+  display: inline-block;
+  line-height: 1;
+}
+
+/* -- Navbar */
+.navbar {
+  background-color: var(--blue-7-transparent);
+  z-index: 999;
+}
+.nav > li {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar li a {
+  display: block;
+  /* height: 40px; */
+  text-align: center;
+  /* padding-top: 30px;
+  padding-bottom: 10px; */
+  /* line-height: 20px; */
+  font-weight: 600;
+  color: var(--bkg-beige);
+}
+.navbar li.active {
+  background-color: var(--blue-7-transparent);
+}
+
+/* Small devices (mobiles, up to 767px) */
+@media only screen and (max-width: 767px) {
+  header .scroll-down {
+    width: 100vw;
+    right: 0;
+    height: 10vh;
+  }
+  .scroll-down .glyphicon {
+    font-size: 1.2em;
+  }
+  .navbar {
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    top: 100vh;
+  }
+  /* toggle between position absolute and sticky with js */
+  .sticky {
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .nav {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+  }
+  .navbar .nav li {
+    height: 10vh;
+    width: calc(100% / 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align content horizontally to the center */
+    align-items: center; /* Align content vertically to the center */
+  }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .scroll-down {
+    height: 10vh;
+    width: 100vw;
+    right: 0;
+  }
+  .scroll-down .glyphicon {
+    font-size: 1.5em;
+  }
+
+  .navbar {
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    top: 100vh;
+  }
+  /* toggle between position absolute and sticky classes with js */
+  .sticky {
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+  .nav {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+  }
+  /* .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20rem;
+  } */
+
+  .navbar .nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% / 4);
+    height: 10vh;
+  }
+}
+
+/* Large devices (laptops/desktops, 1100px and up) */
+@media only screen and (min-width: 1101px) {
+  .scroll-down {
+    right: 2.5vw;
+    height: 8vh;
+    width: 8vw;
+  }
+  .navbar {
+    width: 8vw;
+    position: absolute;
+    top: 100vh;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20rem;
+  }
+  .nav > a {
+    height: 10vh;
+  }
+  /* toggle between position absolute and sticky classes with js */
+  .sticky {
+    position: fixed;
+    top: 20vh;
+  }
+}
+
+/* X-Large devices (X-laptops/desktops, 1281px and up) */
+@media only screen and (min-width: 1282px) {
+  .scroll-down {
+    right: 2.5vw;
+    height: 8vh;
+    width: 8vw;
+  }
+  .navbar {
+    width: 8vw;
+    position: absolute;
+    top: 100vh;
+  }
+  /* toggle between position absolute and sticky classes with js */
+  .sticky {
+    position: fixed;
+    top: 20vh;
+  }
+}
+
+/* X-Large devices (X-laptops/desktops, 1281px and up) */
+@media only screen and (min-width: 1282px) {
+}

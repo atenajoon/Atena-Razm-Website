@@ -34,16 +34,19 @@
   color: var(--blue-3);
 }
 .my-github {
-  color: var(--text-title-hover);
+  color: var(--purple-1);
 }
 .my-docs {
-  color: var(--text-2-1);
+  color: var(--yellow-1);
 }
 .my-email {
-  color: var(--pink-light);
+  color: var(--red-1);
+}
+.my-external-link {
+  color: var(--white-2);
 }
 .my-controller {
-  color: tomato;
+  color: var(--green-1);
 }
 .resume-container {
   display: flex;

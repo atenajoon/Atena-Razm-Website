@@ -188,11 +188,11 @@ body {
 #wrapper > .shape:nth-child(1),
 .shape:nth-child(2),
 .shape:nth-child(3) {
-  background-color: var(--primary-dark-transparent);
+  background-color: var(--blue-6-transparent);
 }
 #wrapper > .shape:nth-child(4),
 .shape:nth-child(5) {
-  background-color: var(--secondary-dark-transparent);
+  background-color: var(--blue-7-transparent);
 }
 #wrapper > .shape:nth-child(6),
 .shape:nth-child(7),
@@ -496,7 +496,7 @@ body {
 } */
 
 /* #wrapper[data-configuration='2'] > .shape:nth-child(5) {
-  background-color: var(--primary-dark-transparent);
+  background-color: var(--blue-6-transparent);
   top: 60%;
   left: 26%;
   width: 48%;
