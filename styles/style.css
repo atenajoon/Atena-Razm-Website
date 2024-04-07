@@ -64,7 +64,8 @@
 
   --red-1: rgba(255, 80, 144);
   --purple-1: rgb(142, 97, 247);
-  --purple-2: rgba(188, 33, 255, 0.957);
+  --purple-2: rgb(180, 154, 240, var(--opacity-00));
+  --purple-3: rgba(188, 33, 255, 0.957);
 }
 
 ::-webkit-scrollbar {
