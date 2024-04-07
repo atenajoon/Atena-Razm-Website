@@ -66,22 +66,31 @@
   --purple-1: rgb(142, 97, 247);
   --purple-2: rgb(180, 154, 240, var(--opacity-00));
   --purple-3: rgba(188, 33, 255, 0.957);
+  --purple-4: rgba(103, 123, 239, var(--opacity-3));
 }
 
+/* style the scrollbar for Firefox */
+html {
+  scrollbar-color: var(--blue-dark) transparent;
+  scrollbar-width: thin;
+}
+/* style the scrollbar for WebKit/Blink-based browsers */
 ::-webkit-scrollbar {
-  /* width: 5px; */
+  width: 5px;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--blue-dark);
   border-radius: 3px;
 }
+
+/*  style the text selected by the user in Mozilla Firefox browser && WebKit/Blink-based browsers*/
 ::-moz-selection {
-  color: var(--white);
-  background: var(--blue-dark);
+  color: var(--white-1);
+  background: var(--purple-4);
 }
 ::selection {
-  color: var(--white);
-  background: var(--blue-dark);
+  color: var(--white-1);
+  background: var(--purple-4);
 }
 
 /* ///////////////////////// */
