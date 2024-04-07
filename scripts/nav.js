@@ -7,40 +7,61 @@ const navItems = document.querySelectorAll('.nav li');
 
 function navOnScroll() {
   // Sticky Nabvar Logic
-  let navbarHeight = navbar.offsetHeight;
   let offset =
     window.innerWidth <= 1100
       ? window.innerHeight
       : window.innerHeight - window.innerHeight * 0.2; // Adding 20vh (the top position of the sticky navbar)
 
   const stickyClass = window.scrollY >= offset ? 'sticky' : '';
-  // const stickyClass = window.scrollY >= sections[0].offsetTop - navbarHeight ? 'sticky' : '';
   navbar.className = `navbar ${stickyClass}`;
 
   // Active Section Detection
+  let navbarHeight = navbar.offsetHeight;
   let currentSection = '';
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    console.log('1. sectionTop: ', sectionTop);
-    console.log('2. sectionHeight: ', sectionHeight);
-    console.log('2. navbarHeight: ', navbarHeight);
-    console.log('3. window.scrollY: ', window.scrollY);
-    console.log('4. sectionTop - navbarHeight: ', sectionTop - navbarHeight);
-    console.log('5. curent section: ', currentSection);
 
     if (window.scrollY >= sectionTop - navbarHeight) {
-      currentSection = section.getAttribute('id');
+      // currentSection = section.getAttribute('id');
+      currentSection = section.getAttribute('class');
+      console.log(
+        window.scrollY,
+        ' is >= ',
+        sectionTop - navbarHeight,
+        ' ? ',
+        'currentSection',
+        currentSection
+      );
     }
   });
 
+  //   console.log('1. sectionTop: ', sectionTop);
+  // //   console.log('2. sectionHeight: ', sectionHeight);
+  //   console.log('2. navbarHeight: ', navbarHeight);
+  //   console.log('3. window.scrollY: ', window.scrollY);
+  //   console.log('4. sectionTop - navbarHeight: ', sectionTop - navbarHeight);
+  //   console.log('5. curent section: ', currentSection);
+
   // Update Active Navigation Tab
+
+  //   navItems.forEach((li) => {
+  //     li.classList.remove('active');
+  //     const refSection = li
+  //       .querySelector('a')
+  //       .getAttribute('href')
+  //       .replace('#', '');
+  //     if (refSection === currentSection) {
+  //       li.classList.add('active');
+  //     }
+  //   });
+
   navItems.forEach((li) => {
     li.classList.remove('active');
-    const refSection = li
-      .querySelector('a')
-      .getAttribute('href')
-      .replace('#', '');
+    const refSection =
+      li.querySelector('a').getAttribute('href').replace('#', '') + ' section';
+    console.log('refSection: ', refSection);
+    console.log('currentSection: ', currentSection);
+
     if (refSection === currentSection) {
       li.classList.add('active');
     }
@@ -49,6 +70,7 @@ function navOnScroll() {
 // Activation on Click (keeping your existing logic)
 document.querySelectorAll('.nav > li').forEach((li, index) => {
   li.addEventListener('click', function () {
+    console.log('li: ', li.id);
     document.querySelector('.nav > .active').classList.remove('active');
     li.classList.add('active');
   });
