@@ -80,7 +80,7 @@
   color: var(--bkg-beige);
 }
 .navbar li.active {
-  background-color: var(--blue-7-transparent);
+  background-color: var(--bkg-beige);
 }
 
 /* Small devices (mobiles, up to 767px) */
@@ -192,6 +192,7 @@
     width: 8vw;
     position: absolute;
     top: 100vh;
+    right: 2.5vw;
   }
   .nav {
     display: flex;
@@ -206,6 +207,7 @@
   .sticky {
     position: fixed;
     top: 20vh;
+    right: 2.5vw;
   }
 }
 
@@ -220,11 +222,13 @@
     width: 8vw;
     position: absolute;
     top: 100vh;
+    right: 2.5vw;
   }
   /* toggle between position absolute and sticky classes with js */
   .sticky {
     position: fixed;
     top: 20vh;
+    right: 2.5vw;
   }
   .nav {
     display: flex;
