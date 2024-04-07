@@ -6,6 +6,9 @@ const navbar = document.getElementById('navbar');
 const navItems = document.querySelectorAll('.nav li');
 
 function navOnScroll() {
+    // added
+    if (isScrollingToSection) return; // Skip the logic if scrolling to a section
+
   // Sticky Nabvar Logic
   let offset =
     window.innerWidth <= 1100
@@ -35,26 +38,7 @@ function navOnScroll() {
     }
   });
 
-  //   console.log('1. sectionTop: ', sectionTop);
-  // //   console.log('2. sectionHeight: ', sectionHeight);
-  //   console.log('2. navbarHeight: ', navbarHeight);
-  //   console.log('3. window.scrollY: ', window.scrollY);
-  //   console.log('4. sectionTop - navbarHeight: ', sectionTop - navbarHeight);
-  //   console.log('5. curent section: ', currentSection);
-
   // Update Active Navigation Tab
-
-  //   navItems.forEach((li) => {
-  //     li.classList.remove('active');
-  //     const refSection = li
-  //       .querySelector('a')
-  //       .getAttribute('href')
-  //       .replace('#', '');
-  //     if (refSection === currentSection) {
-  //       li.classList.add('active');
-  //     }
-  //   });
-
   navItems.forEach((li) => {
     li.classList.remove('active');
     const refSection =
@@ -67,14 +51,53 @@ function navOnScroll() {
     }
   });
 }
-// Activation on Click (keeping your existing logic)
+
+
+// Activation on Click 
+// added
+let isScrollingToSection = false; // Flag to indicate when scrolling to a section
 document.querySelectorAll('.nav > li').forEach((li, index) => {
-  li.addEventListener('click', function () {
-    console.log('li: ', li.id);
-    document.querySelector('.nav > .active').classList.remove('active');
-    li.classList.add('active');
-  });
-});
+    li.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent the default anchor link behavior
+      isScrollingToSection = true; // Set flag to true
+      const sectionId = li.querySelector('a').getAttribute('href');
+      const section = document.querySelector(sectionId);
+
+        // Smooth scroll to the section
+    window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth',
+    });
+        
+    // Wait for the scroll to finish before re-enabling the scroll event logic
+    setTimeout(() => {
+        isScrollingToSection = false;
+      }, 5000); // Adjust the timeout based on your scroll duration
+  
+      document.querySelector('.nav > .active').classList.remove('active');
+      li.classList.add('active');
+    });
+  });    
+
+
+// document.querySelectorAll('.nav > li').forEach((li, index) => {
+//   li.addEventListener('click', function () {
+//     console.log('li: ', li.id);
+//     document.querySelector('.nav > .active').classList.remove('active');
+//     li.classList.add('active');
+//   });
+// });
+
+
+  //   console.log('1. sectionTop: ', sectionTop);
+  // //   console.log('2. sectionHeight: ', sectionHeight);
+  //   console.log('2. navbarHeight: ', navbarHeight);
+  //   console.log('3. window.scrollY: ', window.scrollY);
+  //   console.log('4. sectionTop - navbarHeight: ', sectionTop - navbarHeight);
+  //   console.log('5. curent section: ', currentSection);
+
+
+
 
 // window.onscroll = function() {navOnScroll();};
 // const navbar = document.getElementById("navbar");
