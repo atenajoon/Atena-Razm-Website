@@ -209,6 +209,12 @@ a {
 .footer-p {
   font-size: small;
 }
+.gray-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.gray-icon:hover {
+  transform: scale(1.1);
+}
 
 /* media responsiveness */
 /* Small devices (mobiles, up to 767px) */
@@ -234,7 +240,6 @@ a {
   }
   .gray-icon {
     color: var(--white-1);
-    transition: color 0.3s ease;
   }
   .footer-p {
     width: 31vw;
@@ -252,7 +257,6 @@ a {
   }
   .gray-icon {
     color: var(--white-1);
-    transition: color 0.3s ease;
   }
   .footer-p {
     width: 23vw;
