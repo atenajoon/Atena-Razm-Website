@@ -104,8 +104,7 @@ body {
   line-height: 1.6;
   height: 100vh;
   overflow-x: hidden;
-  /* color: var(--white-1); */
-  color: pink;
+  color: var(--white-1);
   background-color: var(--blue-8);
   display: flex;
   flex-direction: column;
