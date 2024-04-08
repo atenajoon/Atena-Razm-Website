@@ -1,0 +1,130 @@
+.profile-col-3 {
+  text-align: justify;
+}
+.profile-col-3-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.profile-col-3-img img {
+  box-shadow: 1px 1px 2px #39383c, 0 0 25px 1px #5e5e8d, 0 0 5px darkblue;
+  width: 17rem;
+  height: auto;
+  border-width: 0.5px;
+  border-color: var(--coal);
+  border-style: solid;
+  border-radius: 10%;
+}
+.profile-title {
+  margin: 0 0 3rem 0;
+  line-height: 1rem;
+}
+.profile-title > h2 {
+  color: var(--blue-3);
+}
+.profile-content-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.media-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.resume-container {
+  display: flex;
+  align-items: center;
+}
+.resume {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  color: var(--white-3);
+}
+.resume-container:hover .resume,
+.resume-container:hover .resume-arrow-icon {
+  color: var(--torquoise-1);
+}
+.arrow-icon {
+  width: 1.5rem;
+  padding: 0 0 0.3rem 0.3rem;
+  transform: translateX(0) translateY(0);
+}
+.resume-arrow-icon {
+  display: flex;
+  align-items: flex-end;
+  color: var(--white-3);
+  padding-left: 0.3rem;
+}
+.arrow-icon,
+.resume-arrow-icon {
+  transition: transform 0.2s ease;
+}
+.resume-container:hover .arrow-icon {
+  transform: translateX(0.3rem) translateY(-0.3rem);
+}
+
+/* Small devices (mobiles, up to 767px) */
+@media only screen and (max-width: 767px) {
+  .media-container {
+    display: flex;
+    align-items: center;
+  }
+  .profile-content-container {
+    flex-direction: column;
+  }
+  .profile-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-title > .h1 {
+    font-size: 2rem;
+  }
+  .profile-col-3-img {
+    margin-top: 3rem;
+  }
+
+  .resume-container {
+    justify-content: center;
+  }
+  .resume,
+  .resume-arrow-icon {
+    color: var(--torquoise-1);
+  }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .profile-content-container {
+    align-items: baseline;
+  }
+  .profile-col-3 {
+    width: 36vw;
+    padding: 1.5rem 2rem;
+  }
+  .profile-col-3-img {
+    text-align: center;
+    padding: 3rem 0 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 1100px and up) */
+@media only screen and (min-width: 1101px) {
+  .profile-content-container {
+    align-items: baseline;
+  }
+  .profile-col-3 {
+    width: 36vw;
+    padding: 1.5rem 2rem;
+  }
+  .profile-col-3-img {
+    padding: 0;
+    width: 28vw;
+  }
+}
+
+/* X-Large devices (X-laptops/desktops, 1281px and up) */
+@media only screen and (min-width: 1282px) {
+}

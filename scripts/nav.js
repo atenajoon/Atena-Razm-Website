@@ -1,80 +1,87 @@
-window.onscroll = function() {navOnScroll();};
-const navbar = document.getElementById("navbar");
-const userAgent = navigator.userAgent;
-
-let highlightSections = true;
-let scrollTimer = -1;
-
-function scrollFinished() {
-    highlightSections = true;
-    console.log("finished");
-}
+window.onscroll = function () {
+  navOnScroll();
+};
+const scrollDownLink = document.querySelector('.scroll-down');
+const sections = document.querySelectorAll('section');
+const navbar = document.getElementById('navbar');
+const navItems = document.querySelectorAll('.nav li');
 
 function navOnScroll() {
-    let innerH = window.innerHeight;
-    let innerW = window.innerWidth;
-    const navbarOffsetPixel = (20 * innerH) / 100;
-    const MOBILE_OFFSET = window.scrollY;
-    const WINDOWS_OFFSET = window.scrollY + navbarOffsetPixel;    
+  if (isScrollingToSection) return; // Skip the logic if scrolling to a section
 
-    let offset = innerW <= 1100 ? MOBILE_OFFSET : WINDOWS_OFFSET;
+  // Sticky Nabvar Logic
+  let navOffset;
+  if (window.innerWidth <= 1100) {
+    // Define the Intersection Observer
+    let observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          !entry.isIntersecting
+            ? // When the scroll-down link is out of view, add the sticky class
+              navbar.classList.add('sticky')
+            : // When the scroll-down link is in view, remove the sticky class
+              navbar.classList.remove('sticky');
+        });
+      },
+      {
+        rootMargin: '0px',
+        threshold: 0.01,
+      }
+    );
 
-    offset >= innerH ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");  
-    
-    if (navbar.classList.contains("sticky")) {
-        navbar.style.right = userAgent.includes('Chrome') ? "2.2vw" : "2.5vw";
-    } else {
-        navbar.style.right = "2.5vw";
+    // Observe the scroll-down link
+    if (scrollDownLink) observer.observe(scrollDownLink);
+  } else {
+    navOffset = window.innerHeight - window.innerHeight * 0.2;
+    const stickyClass = window.scrollY >= navOffset ? 'sticky' : '';
+    navbar.className = `navbar ${stickyClass}`;
+  }
+
+  // Active Section Detection
+  let navbarHeight = navbar.offsetHeight;
+  let currentSection = '';
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+
+    if (window.scrollY >= sectionTop - navbarHeight)
+      currentSection = section.getAttribute('id');
+  });
+
+  // Update Active Navigation Tab
+  navItems.forEach((li) => {
+    li.classList.remove('active');
+    const refSection = li
+      .querySelector('a')
+      .getAttribute('href')
+      .replace('#', '');
+
+    if (refSection === currentSection) {
+      li.classList.add('active');
     }
-
-
-    // updating the nav activation on scroll
-    const SECTION_COUNT = document.querySelectorAll("section");
-
-    
-    // let nav=[];
-    // for(let i=1; i<=4; i++) { nav[i] = document.getElementById("nav-item-"+i); }
-    
-    
-    // if(highlightSections) {
-    //     sec = [];
-    //     SECTION_LENGTHS = [ null, 200, 200, 450 ];
-        
-    //     for(var i = 2; i <= SECTION_COUNT.length; i++) { 
-    //         sec[i] = document.getElementById("sec" + i).offsetTop - SECTION_LENGTHS[i-1];
-    //     }
-        
-    //     if (offset <= sec[2]) { activate(1); }
-    //     else if (offset <= sec[3]) { activate(2); }
-    //     else if (offset <= sec[4]) { activate(3); }
-    //     else { activate(4); }
-    // }
-    
-    // function activate(navItem) {
-    //     for(i = 1; i <= 4; i++) {
-    //         if(i == navItem) {
-    //             nav[i].classList.add("active");
-    //         } else {
-    //             nav[i].classList.remove("active");
-    //         }
-    //     }
-    // }
-
-    if(scrollTimer !== -1) {clearTimeout(scrollTimer);}
-    scrollTimer = window.setTimeout('scrollFinished()', 300);
+  });
 }
 
+// Activation on Click
+let isScrollingToSection = false; // Flag to indicate when scrolling to a section
+document.querySelectorAll('.nav > li').forEach((li, index) => {
+  li.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent the default anchor link behavior
+    isScrollingToSection = true; // Set flag to true
+    const sectionId = li.querySelector('a').getAttribute('href');
+    const section = document.querySelector(sectionId);
 
+    // Smooth scroll to the section
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
 
-// updating the nav activation on click
-let myNav  = document.querySelectorAll(".nav > li");
+    // Wait for the scroll to finish before re-enabling the scroll event logic
+    setTimeout(() => {
+      isScrollingToSection = false;
+    }, 5000);
 
-for(let i=0; i<myNav.length; i++) {
-    myNav[i].addEventListener("click", function() {
-        document.querySelector(".nav > .active").classList.remove("active");
-        myNav[i].classList.add("active");
-        highlightSections = false;
-    })
-}
-
-/*  End  */
+    document.querySelector('.nav > .active').classList.remove('active');
+    li.classList.add('active');
+  });
+});

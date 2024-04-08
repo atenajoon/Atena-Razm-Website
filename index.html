@@ -19,14 +19,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
+
     <link rel="stylesheet" href="styles/style.css" />
 
     <title>
@@ -60,7 +60,7 @@
             <div id="div4" class="word content-1">ES6</div>
             <div id="div5" class="word content-2">WORDPRESS</div>
             <div id="wrapperDiv" class="word"></div>
-            <div id="div7" class="word content-1">BOOTSTRAP</div>
+            <div id="div7" class="word content-2">BOOTSTRAP</div>
             <div id="div8" class="word content-2">LARAVEL</div>
             <div id="div9" class="word content-1">FIGMA</div>
             <div id="div10" class="word content-2">PHP</div>
@@ -68,242 +68,500 @@
         </section>
         <!-- Menu Arrow -->
         <a href="#profile-sec" class="scroll-down">
-          <span class="glyphicon"><i class="fa">&#xf078;</i></span>
+          <span class="glyphicon"
+            ><i style="font-size: larger" class="fa">&#xf078;</i></span
+          >
         </a>
         <!-- Navigation Bar -->
         <header id="navbar" class="navbar">
           <nav role="navigation">
             <ul class="nav">
               <li id="nav-item-1" class="active">
-                <a href="#section-1">Profile</a>
+                <a href="#profile-sec">Profile</a>
               </li>
-              <li id="nav-item-2" class=""><a href="#section-2">Skills</a></li>
+              <li id="nav-item-2" class="">
+                <a class="work-sec" href="#work-sec">Experience</a>
+              </li>
               <li id="nav-item-3" class="">
-                <a href="#section-3">Experience</a>
+                <a href="#project-sec">Projects</a>
               </li>
-              <li id="nav-item-4" class=""><a href="#section-4">Contact</a></li>
+              <!-- <li id="nav-item-4" class="">
+                <a href="#contact-sec">Contact</a>
+              </li> -->
             </ul>
           </nav>
         </header>
       </section>
-
     </header>
     <!-- main -->
     <main>
-      <!-- Profile -->
-      <section id="profile-sec" class="center">
-        <div class="container text-container">
-          <h1><span class="h1">Atena Razm</span></h1>
-          <p class="lead">Client Software Developer</p>
-        </div>
-        <span></span>
-        <hr />
-        <div id="profile-content">
-          <div class="col-3">
-            <h3 class="h3">About Me</h3>
-            <p>
-              When I moved to Canada in 2019, I decided to have a career
-              transition to do something more creative and less extrovert.
-              Thanks to my business and hospitality background, I already had
-              the essential soft skills to be successful in any industry. I just
-              needed to learn the technical part. It wasn't easy at all, but
-              turned out to be my best decision ever!
-            </p>
-          </div>
-          <div class="col-3">
-            <img src="images/me.png" alt="a picture of Atena Razm" />
-          </div>
-          <div class="col-3">
-            <h3 class="h3">Details</h3>
-            <p>
-              <strong>Name:</strong>
+      <span id="main-div">
+        <!-- Profile -->
+
+        <section class="section" id="profile-sec">
+          <span class="section-span"></span>
+          <div class="profile-content-container">
+            <div class="profile-col-3">
+              <div class="profile-title">
+                <h1 class="h1"><span class="bold">Atena Razm</span></h1>
+                <h2 class="h2 bold">Client Software Developer</h2>
+              </div>
+              <p>
+                When I moved to Canada in 2019, I decided to have a career
+                transition to do something more creative and less extrovert.
+                Thanks to my <span class="bold">business</span> and
+                <span class="bold">hospitality</span> background, I already had
+                the essential soft skills to be successful in any industry. I
+                just needed to learn the technical part. So, I took a
+                <span class="bold">Web Development</span> program at
+                <span class="bold">BCIT</span> for the start. It wasn't easy at
+                all, but it turned out to be my best decision ever!
+              </p>
               <br />
-              Atena Razmpoush
-              <br />
-              <strong>Location:</strong>
-              <br />
-              Vancouver, BC.
-              <br />
-              <strong>
-                <a target="_blank" href="https://www.linkedin.com/in/a-razm/">
-                  <i class="fa fa-linkedin-square" style="font-size: 36px"
-                    ><span>LinkedIn</span></i
-                  >
-                </a>
-              </strong>
-              <br />
-              <strong>
-                <a target="_blank" href="https://github.com/atenajoon">
-                  <i class="fa fa-github-square" style="font-size: 36px"
-                    ><span>GitHub</span></i
-                  >
-                </a>
-              </strong>
-              <br />
-              <strong>
-                <a target="_blank" href="./scr/cv.pdf">
+              <div class="media-container">
+                <a
+                  title="LinkedIn"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/a-razm/"
+                >
                   <i
-                    id="my-cv"
-                    class="fa fa-file-text"
-                    style="font-size: 32px"
-                    aria-hidden="true"
-                    ><span class="my-cv">Resume</span></i
-                  >
+                    class="my-linkedin gray-icon media fa fa-linkedin-square"
+                  ></i>
                 </a>
-              </strong>
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- Projects -->
-      <section id="project-sec" class="section-2">
-        <div class="bkg-dark container">
-          <h2 class="h2">Projects</h2>
-          <hr />
-          <b class="lead" id="gameIconText">Play My Games!</b>
-          <div class="media">
-            <span class="icon gameIcon">
+                <a
+                  title="GitHub"
+                  target="_blank"
+                  href="https://github.com/atenajoon"
+                >
+                  <i class="my-github gray-icon media fa fa-github-square"></i>
+                </a>
+                <a
+                  title="Email"
+                  target="_blank"
+                  href="mailto:atenarazm@gmail.com"
+                >
+                  <i
+                    class="my-email gray-icon media fa fa-envelope-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
+              <!-- Download full Resume -->
               <a
+                class="resume-container"
+                title="Resume"
                 target="_blank"
-                href="https://atenajoon.itch.io/levelup-update-2"
+                href="./scr/cv.pdf"
               >
-                <i class="fa fa-gamepad" aria-hidden="true"> 1</i>
+                <span class="resume"
+                  >View Full<span class="resume-arrow-icon">
+                    Résumé<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="arrow-icon inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                </span>
               </a>
-            </span>
-            <span class="icon gameIcon">
-              <a target="_blank" href="https://atenajoon.itch.io/2dshoot">
-                <i class="fa fa-gamepad" aria-hidden="true"> 2</i>
-              </a>
-            </span>
-          </div>
-        </div>
-        <h3 class="h3 sublink">
-          Check out my projects on
-          <a target="_blank" href="https://github.com/atenajoon" class="link"
-            >GitHub</a
-          >!
-        </h3>
-      </section>
-      <!-- Work Experience -->
-      <section id="experience-sec" class="section-3">
-        <span id="section-3"></span>
-        <div class="container">
-          <h2 class="h2">Work Experience</h2>
-          <hr />
-          <div class="experience experienceTabs tabs">
-            <div class="experience tab-header">
-              <div class="active">May 2022 - Aug 2023</div>
-              <div>Jan 2022 - Sep 2022</div>
-              <div>Feb 2024 - Present</div>
             </div>
-            <div class="experience tab-content">
-              <div class="active">
-                <h3 class="h3">
-                  Frontend Software Developer at <span>GoodBot</span>
-                </h3>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/company/gogoodbot/"
-                  ><img
-                    alt="GoodBot's Logo"
-                    class="current-experience-img"
-                    src="https://media.licdn.com/dms/image/C4E0BAQHepGCYgJKAAQ/company-logo_200_200/0/1654767113761/goodbot4science_logo?e=2147483647&v=beta&t=7xeh7R8e8w4k9Mjf_uLVqpsMXXNPKVnua5-hG_uJRrE"
-                /></a>
-                <p>
-                  This is a volunteer hybrid work, using React, JavaScript,
-                  CSS3, and Tailwind to redesign the UI and optimise the API
-                  calls to store the data in the database.
-                </p>
-              </div>
-              <div>
-                <h3 class="h3">
-                  Associate Software Engineer at
-                  <span>Eastside Games Studio</span>
-                </h3>
-                <a target="_blank" href="https://www.eastsidegames.com/"
-                  ><img
-                    alt="ESG's Logo"
-                    class="current-experience-img"
-                    src="https://www.eastsidegames.com/wp-content/uploads/East-Side-Games-Logo-1200-x-628-Facebook.png"
-                /></a>
-                <p>
-                  Working at this amazing studio with a lovely team was an
-                  oportunity for me to enter the game industry and learn a lot
-                  of cool stuff. During my time at
-                  <strong
-                    ><a
-                      style="color: #bbd235"
-                      target="_blank"
-                      href="https://www.eastsidegames.com"
-                      class="link"
-                      >ESG</a
-                    ></strong
-                  >, I worked on 5 different projects with various technologies
-                  like C#, Unity, Steam, ActionScript, GitHub, Perforce and much
-                  more.
-                </p>
-              </div>
-              <div>
-                <h3 class="h3">
-                  Mobile Software Developer at <span>iContribute</span>
-                </h3>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/company/icontribute/?originalSubdomain=ca"
-                  ><img
-                    alt="iContribute's Logo"
-                    class="current-experience-img"
-                    src="https://media.licdn.com/dms/image/C4E0BAQHrCImO4WtACw/company-logo_200_200/0/1650832361404?e=2147483647&v=beta&t=SAteBo3uj9Z_A-QK5_q8m26liufZO0KiBKLQPn90xS8"
-                /></a>
-                <p>
-                  This was a volunteer remote experience, using React Native,
-                  CSS3, and Bootstrap. As a mobile developer, I collaborated
-                  with other developers, debugged existing codes, made and
-                  implemented new components, did code reviews, and participated
-                  in the scrum meetings!
-                </p>
-              </div>
+            <div class="profile-col-3-img">
+              <img src="images/me-2.jpg" alt="a picture of Atena Razm" />
             </div>
           </div>
-        </div>
-        <hr />
-        <span id="section-4"></span>
-      </section>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="section" id="work-sec">
+          <span class="section-span"></span>
+          <h3 class="bold title">Work Experience____</h3>
+          <div class="work-content-container content-container">
+            <div class="content-col">
+              <b class="content-title">Frontend Engineer . PIP Empire</b>
+              <p>
+                Build and maintain the web application from scratch using React,
+                NextJS, and Tailwind to create reusable UI components. Work
+                closely with cross-functional teams, including developers,
+                designers, and stakeholders to implement and advocate for the
+                best practices in web accessibility.
+              </p>
+              <div class="items-container">
+                <span class="content-items">JavaScript</span>
+                <span class="content-items">React</span>
+                <span class="content-items">NextJS</span>
+                <span class="content-items">Tailwind</span>
+              </div>
+            </div>
+            <div class="title-col">
+              <p>MAR 2024 - PRESENT____</p>
+            </div>
+          </div>
+
+          <div class="work-content-container content-container">
+            <div class="content-col">
+              <b class="content-title"
+                >Associate Software Engineer . East Side Games Studio</b
+              >
+              <p>
+                Used Unity, C#, and ActionScript to build new UI features and
+                maintain and updated the existing codebase, documentation, Ad
+                Monetization tools and SDK packages of 5 to 6 different
+                projects, including Steam and mobile Idle games.
+              </p>
+              <div class="items-container">
+                <span class="content-items">Unity</span>
+                <span class="content-items">C#</span>
+                <span class="content-items">Steam</span>
+                <span class="content-items">Jenkins</span>
+              </div>
+            </div>
+            <div class="title-col">
+              <p>MAY 2021 - AUG 2023____</p>
+            </div>
+          </div>
+
+          <!-- Volunteer Work -->
+          <h3 class="bold title">Volunteer Work____</h3>
+          <div class="work-content-container content-container">
+            <div class="content-col">
+              <b class="content-title">Frontend Software Engineer . GoodBot</b>
+              <p>
+                Implement an input system to save user data in the database via
+                API calls using React and NextJS. Assist the UX design team in
+                redesigning an MVP web application.
+              </p>
+              <div class="items-container">
+                <span class="content-items">JavaScript</span>
+                <span class="content-items">React</span>
+                <span class="content-items">NextJS</span>
+                <span class="content-items">Tailwind</span>
+              </div>
+            </div>
+            <div class="title-col">
+              <p>JAN 2024 - PRESENT____</p>
+            </div>
+          </div>
+
+          <div class="work-content-container content-container">
+            <div class="content-col">
+              <b class="content-title"
+                >Frontend Mobile Developer . iContribute</b
+              >
+              <p>
+                Built the redesign of the existing mobile application with React
+                Native and Bootstrap. Participated in code reviews and peer
+                programming.
+              </p>
+              <div class="items-container">
+                <span class="content-items">React Native</span>
+                <span class="content-items">Bootstrap</span>
+                <span class="content-items">Figma</span>
+              </div>
+            </div>
+            <div class="title-col">
+              <p>JAN 2022 - SEP 2022____</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="project-sec">
+          <span class="section-span"></span>
+          <h3 class="bold title">My Game Projects____</h3>
+          <div class="content-container project-content-container">
+            <div class="content-col">
+              <b class="content-title">Level-Up 3D Game</b>
+              <p>
+                A 3D game with two levels created on Unity using C#, Unity
+                Physics, Assets, Prefabs, Particle System, and Audio System. The
+                player character moves around and jumps with AWSD/Arrow keys. It
+                should collect all of the coins and gets to the End Flag within
+                60 seconds to pass a level. The reb boxes kill the player, and
+                the bonfires reduce its health!
+              </p>
+              <div class="items-container">
+                <a
+                  title="levelUp-game"
+                  target="_blank"
+                  href="https://atenajoon.itch.io/levelup-update-2"
+                >
+                  <i
+                    class="my-controller gray-icon media fa fa-gamepad"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <span class="content-items">2D</span>
+                <span class="content-items">Unity</span>
+                <span class="content-items">C#</span>
+                <span class="content-items">Sound System</span>
+                <span class="content-items">Audio System</span>
+                <span class="content-items">Input System</span>
+                <span class="content-items">UI System</span>
+                <span class="content-items">Unity Particles</span>
+              </div>
+            </div>
+            <div class="title-col project-title-col">
+              <img
+                src="images/levelUp-game.png"
+                alt="a picture of Level-Up Game"
+              />
+            </div>
+          </div>
+          <div class="content-container project-content-container">
+            <div class="content-col">
+              <b class="content-title">Shooter 2D Game</b>
+              <p>
+                A 2D game shooting platformer created on Unity using C#, the New
+                Input System, Animation System, and Unity Physics.
+              </p>
+              <div class="items-container">
+                <a
+                  title="shooting-game"
+                  target="_blank"
+                  href="https://atenajoon.itch.io/2dshoot"
+                >
+                  <i
+                    class="my-controller gray-icon media fa fa-gamepad"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <span class="content-items">2D</span>
+                <span class="content-items">Unity</span>
+                <span class="content-items">C#</span>
+                <span class="content-items">Sound System</span>
+                <span class="content-items">Audio System</span>
+                <span class="content-items">Input System</span>
+                <span class="content-items">Sprite Animation</span>
+              </div>
+            </div>
+            <div class="title-col project-title-col">
+              <img
+                src="images/shooting-game.png"
+                alt="a picture of Level-Up Game"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="project-sec section">
+          <h3 class="bold title">My Web Projects____</h3>
+          <div class="content-container project-content-container">
+            <div class="content-col">
+              <b class="content-title">My Interactive Resume</b>
+              <p>
+                This web application you are visiting right now is one of my
+                personal projects, designed and coded by myself in HTML, CSS,
+                and vanilla JavaScript without using any libraries or
+                frameworks. I used GitHub.io to deploy it.
+              </p>
+              <div class="items-container">
+                <a
+                  target="_blank"
+                  href="https://github.com/atenajoon/Atena-Razm-Website"
+                >
+                  <i
+                    class="my-github fa fa-github-square gray-icon media"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <span class="content-items">HTML</span>
+                <span class="content-items">CSS</span>
+                <span class="content-items">JavaScript</span>
+              </div>
+            </div>
+            <div class="title-col project-title-col">
+              <a
+                title="levelUp-game"
+                target="_blank"
+                href="https://atenajoon.github.io/my_interactive_cv/"
+              >
+                <img
+                  src="images/me-website.png"
+                  alt="a picture of my interactive resume website"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="content-container project-content-container">
+            <div class="content-col">
+              <b class="content-title">Hatchways Student Assessment</b>
+              <p>
+                This is the Hatchways assessment, done with React and Redux.
+                find the.
+              </p>
+              <div class="items-container">
+                <a
+                  title="Hatchways Application Photo"
+                  target="_blank"
+                  href="https://atena-hw.vercel.app/"
+                >
+                  <i
+                    class="my-github gray-icon media fa fa-github-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  style="align-self: center"
+                  title="Hatchways documentation"
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1ysVN8RYAHZOLCHFj03uyQ85NEUjo-QLOL0HauZkAWqw/edit#heading=h.qohzxgf0xy6n"
+                >
+                  <i
+                    id="content-icon-docs"
+                    class="my-docs gray-icon media fa fa-file-text-o"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <span class="content-items">XML</span>
+                <span class="content-items">React</span>
+                <span class="content-items">Redux</span>
+                <span class="content-items">Bootstrap</span>
+              </div>
+            </div>
+            <div class="title-col project-title-col">
+              <img
+                src="images/hatchways-photo.png"
+                alt="a picture of the Hatchways Project"
+              />
+            </div>
+          </div>
+          <div class="content-container project-content-container">
+            <div class="content-col">
+              <b class="content-title">To Do App</b>
+              <p>
+                A basic ToDoApp created with React, Bootstrap, and JSON
+                Placeholder API. It fetches a list of ToDo items from the
+                backend and displays them in cards after the first render. It
+                lets the user filter the list, add, edit, and delete them.
+              </p>
+              <div class="items-container">
+                <a
+                  title="To Do App's Photo"
+                  target="_blank"
+                  href="https://atena-todo.vercel.app/"
+                >
+                  <i
+                    class="my-github gray-icon media fa fa-github-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  style="align-self: center"
+                  title="To Do App documentation"
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1ScT32k3rNlFG-BNh7K3CDl0gWUk6N5UnYMILOudzovM/edit#heading=h.cbucbgml2o6k"
+                >
+                  <i
+                    id="content-icon-docs"
+                    class="my-docs gray-icon media fa fa-file-text-o"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <span class="content-items">API Calls</span>
+                <span class="content-items">JSON</span>
+                <span class="content-items">React</span>
+                <span class="content-items">Bootstrap</span>
+              </div>
+            </div>
+            <div class="title-col project-title-col">
+              <img
+                src="images/todo-app.png"
+                alt="a picture of the ToDoApp Project"
+              />
+            </div>
+          </div>
+          <div class="content-container project-content-container">
+            <div class="content-col">
+              <b class="content-title">Boulevard Dry Cleaners Website</b>
+              <p>
+                I designed and made this website for a local dry cleaner using
+                WordPress, Elementor, and some custom CSS code. The content and
+                the owner's photos are chosen based on the business values and
+                unique attrivutes and services.
+              </p>
+              <div class="items-container">
+                <a
+                  title="Boulevard Dey Cleaners Website"
+                  target="_blank"
+                  href="https://boulevarddrycleaners.com/"
+                >
+                  <i
+                    id="content-icon-external-link"
+                    class="my-external-link gray-icon media fa fa-external-link"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <span class="content-items">WordPress</span>
+                <span class="content-items">Elementor</span>
+                <span class="content-items">CSS</span>
+              </div>
+            </div>
+            <div class="title-col project-title-col">
+              <img
+                src="images/boulevardDryCleaners.png"
+                alt="a picture of the dry cleaner's website"
+              />
+            </div>
+          </div>
+        </section>
+      </span>
+      <!-- Download full Resume -->
+      <a
+        class="resume-container resume-container-footer"
+        title="Resume"
+        target="_blank"
+        href="./scr/cv.pdf"
+      >
+        <span class="resume resume-footer"
+          >View Full<span class="resume-arrow-icon">
+            Résumé<svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="arrow-icon inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+        </span>
+      </a>
     </main>
+
     <!-- footer -->
     <footer>
       <!-- Contact Me -->
-      <section id="contact-sec" class="section-4">
-        <div class="bkg-dark container wrapper">
-          <h2 class="h2">Contact Me!</h2>
-          <div class="media">
-            <ul>
-              <li class="icon">
-                <a target="_blank" href="https://www.linkedin.com/in/a-razm/">
-                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="icon">
-                <a target="_blank" href="https://github.com/atenajoon">
-                  <i class="fa fa-github-square" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="icon">
-                <a target="_blank" href="mailto:atenarazm@gmail.com">
-                  <i class="fa fa-envelope-square" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <hr />
-          <p class="lead">
-            The only way to do great works is to love what you do. If you
-            haven't found it yet, keep looking. Don't settle.<br /><small
-              >-Steve Jobs</small
-            >
-          </p>
-          <hr />
+      <section id="contact-sec" class="contact-sec section">
+        <h3 class="bold title contact-title">Contact Me____</h3>
+        <div class="media-container">
+          <a
+            title="LinkedIn"
+            target="_blank"
+            href="https://www.linkedin.com/in/a-razm/"
+          >
+            <i class="my-linkedin gray-icon media fa fa-linkedin-square"></i>
+          </a>
+          <a title="GitHub" target="_blank" href="https://github.com/atenajoon">
+            <i class="my-github gray-icon media fa fa-github-square"></i>
+          </a>
+          <a title="Email" target="_blank" href="mailto:atenarazm@gmail.com">
+            <i
+              class="my-email gray-icon media fa fa-envelope-square"
+              aria-hidden="true"
+            ></i>
+          </a>
         </div>
+        <p class="footer-p">Designed, and coded in Visual Studio Code by yours truly. Purely built with HTML, CSS, and JavaScript only. Deployed with Vercel.</p>
       </section>
     </footer>
 
