@@ -173,14 +173,19 @@ a {
 .my-external-link {
   color: var(--text-3-2);
 }
-
-.content-container:hover .gray-icon.my-linkedin {
+.gray-icon:hover .gray-icon.my-linkedin,
+.content-container:hover .gray-icon.my-linkedin,
+.contact-sec:hover .gray-icon.my-linkedin {
   color: var(--torquoise-2);
 }
-.content-container:hover .gray-icon.my-github {
+.gray-icon:hover .gray-icon.my-github,
+.content-container:hover .gray-icon.my-github,
+.contact-sec:hover .gray-icon.my-github {
   color: var(--purple-2);
 }
-.content-container:hover .gray-icon.my-email {
+.gray-icon:hover .gray-icon.my-email,
+.content-container:hover .gray-icon.my-email,
+.contact-sec:hover .gray-icon.my-email {
   color: var(--red-1);
 }
 .content-container:hover .gray-icon.my-controller {
@@ -193,7 +198,7 @@ a {
   color: var(--text-3-2);
 }
 
-.gray-icon.my-linkedin:hover {
+/* .gray-icon.my-linkedin:hover {
   color: var(--torquoise-2);
 }
 .gray-icon.my-github:hover {
@@ -201,7 +206,7 @@ a {
 }
 .gray-icon.my-email:hover {
   color: var(--red-1);
-}
+} */
 
 .resume-footer {
   margin-top: 2rem;
