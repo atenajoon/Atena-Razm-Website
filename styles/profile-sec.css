@@ -1,6 +1,3 @@
-#profile-sec {
-}
-
 .profile-col-3 {
   text-align: justify;
 }
@@ -128,14 +125,6 @@
     width: 28vw;
   }
 }
-
-/* X-Large devices (X-laptops/desktops, 1281px and up) */
-@media only screen and (min-width: 1282px) {
-}
-/* .profile-col-3 {
-  width: 36vw;
-  padding: 1.5rem 2rem;
-} */
 
 /* X-Large devices (X-laptops/desktops, 1281px and up) */
 @media only screen and (min-width: 1282px) {

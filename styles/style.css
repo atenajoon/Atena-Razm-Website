@@ -3,16 +3,6 @@
 @import url('./profile-sec.css');
 @import url('./content-containers.css');
 
-/* 
--- variables
--- general elements
--- general classes and ids
--- header
--- Navbar
--- sections
--- profile image
-*/
-
 :root {
   /* font */
   --font: 'Open Sans', sans-serif !important;
