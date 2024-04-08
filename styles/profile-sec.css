@@ -26,6 +26,22 @@
   display: flex;
   justify-content: space-evenly;
 }
+.profile-col-3:hover .gray-icon.my-linkedin {
+  color: var(--torquoise-2);
+}
+.profile-col-3:hover .gray-icon.my-github {
+  color: var(--purple-2);
+}
+.profile-col-3:hover .gray-icon.my-email {
+  color: var(--red-1);
+}
+.profile-col-3:hover .resume,
+.profile-col-3:hover .resume-arrow-icon {
+  color: var(--torquoise-1);
+}
+.profile-col-3:hover .arrow-icon {
+  transform: translateX(0.3rem) translateY(-0.3rem);
+}
 .media-container {
   display: flex;
   align-items: center;
