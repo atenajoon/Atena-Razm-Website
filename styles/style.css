@@ -206,6 +206,9 @@ a {
 .resume-footer {
   margin-top: 2rem;
 }
+.footer-p {
+  font-size: small;
+}
 
 /* media responsiveness */
 /* Small devices (mobiles, up to 767px) */
@@ -233,6 +236,9 @@ a {
     color: var(--white-1);
     transition: color 0.3s ease;
   }
+  .footer-p {
+    width: 31vw;
+  }
 }
 
 /* Large devices (laptops/desktops, 1100px and up) */
@@ -248,12 +254,14 @@ a {
     color: var(--white-1);
     transition: color 0.3s ease;
   }
+  .footer-p {
+    width: 23vw;
+  }
 }
 
 /* X-Large devices (X-laptops/desktops, 1281px and up) */
 @media only screen and (min-width: 1282px) {
-}
-
-/* X-Large devices (X-laptops/desktops, 1281px and up) */
-@media only screen and (min-width: 1282px) {
+  .footer-p {
+    width: 20vw;
+  }
 }
