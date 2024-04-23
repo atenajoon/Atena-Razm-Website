@@ -68,7 +68,7 @@ function changeBackground() {
 
 setInterval(() => {
   changeBackground();
-}, 3000);
+}, 3500);
 
 wrapper.dataset.configuration = 1;
 wrapper.dataset.roundness = 1;
