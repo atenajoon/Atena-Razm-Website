@@ -55,7 +55,7 @@ let bgIndex = 1;
 function changeBackground() {
   console.log('bgIndex: ', bgIndex);
   const combination = configCombinations[bgIndex];
-  shapeContainer.style.marginTop = bgIndex === 1 ? '5rem' : '2rem';
+  shapeContainer.style.marginTop = bgIndex === 1 ? '25%' : '5%';
 
   backgroundDiv.style.backgroundPosition = combination.position;
   wrapper.dataset.configuration = combination.configuration;
@@ -66,14 +66,12 @@ function changeBackground() {
 }
 // let contentIndex = 0;
 
-
 setInterval(() => {
   changeBackground();
 }, 3000);
 
 wrapper.dataset.configuration = 1;
 wrapper.dataset.roundness = 1;
-
 
 // //  change HTML content
 // function changeContent() {
