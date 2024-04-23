@@ -24,7 +24,7 @@
 }
 .profile-content-container {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 .profile-col-3:hover .gray-icon.my-linkedin {
   color: var(--torquoise-2);

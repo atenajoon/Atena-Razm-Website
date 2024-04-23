@@ -181,7 +181,7 @@
   .scroll-down {
     right: 2.5vw;
     height: 10vh;
-    width: 15vw;
+    width: 14vw;
   }
   .scroll-down .glyphicon {
     font-size: 1.9rem;
@@ -190,7 +190,7 @@
     padding-top: 0.1rem;
   }
   .navbar {
-    width: 15vw;
+    width: 14vw;
     position: absolute;
     top: 100vh;
     right: 2.5vw;
@@ -201,11 +201,11 @@
     justify-content: space-around;
     align-items: center;
     height: 30vh;
-    width: 15vw;
+    width: 14vw;
   }
   .nav > li {
     height: 10vh;
-    width: 15vw;
+    width: 14vw;
   }
   /* toggle between position absolute and sticky classes with js */
   .sticky {
