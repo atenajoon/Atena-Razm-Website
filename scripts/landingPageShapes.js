@@ -11,45 +11,45 @@ const configCombinations = [
   { configuration: 3, roundness: 3, position: 'right' },
 ];
 
-//  3 content configs
-const contentArray = [
-  [
-    'SONAR CLOUD',
-    'STEAM',
-    'UNITY',
-    'IOS',
-    'JENKINS',
-    '',
-    'UX/UI',
-    'ANDROID',
-    'UNREAL',
-    'C#',
-  ],
-  [
-    'REACT NATIVE',
-    'IOS',
-    'ANDROID',
-    'JS',
-    'TESTFLIGHT',
-    '',
-    'JENKINS',
-    'SONAR CLOUD',
-    'UX/UI',
-    'GIT',
-  ],
-  [
-    'HTML',
-    'REACT',
-    'CSS3',
-    'ES6',
-    'WORDPRESS',
-    '',
-    'BOOTSTRAP',
-    'LARAVEL',
-    'FIGMA',
-    'PHP',
-  ],
-];
+// //  3 content configs
+// const contentArray = [
+//   [
+//     'SONAR CLOUD',
+//     'STEAM',
+//     'UNITY',
+//     'IOS',
+//     'JENKINS',
+//     '',
+//     'UX/UI',
+//     'ANDROID',
+//     'UNREAL',
+//     'C#',
+//   ],
+//   [
+//     'REACT NATIVE',
+//     'IOS',
+//     'ANDROID',
+//     'JS',
+//     'TESTFLIGHT',
+//     '',
+//     'JENKINS',
+//     'SONAR CLOUD',
+//     'UX/UI',
+//     'GIT',
+//   ],
+//   [
+//     'HTML',
+//     'REACT',
+//     'CSS3',
+//     'ES6',
+//     'WORDPRESS',
+//     '',
+//     'BOOTSTRAP',
+//     'LARAVEL',
+//     'FIGMA',
+//     'PHP',
+//   ],
+// ];
 
 let bgIndex = 1;
 function changeBackground() {
