@@ -77,16 +77,20 @@
 .section-span {
   display: block;
 }
+.scroll-down .glyphicon {
+  font-size: 2rem;
+}
+
 /* Small devices (mobiles, up to 767px) */
 @media only screen and (max-width: 767px) {
   header .scroll-down {
     width: 100vw;
     right: 0;
-    height: 10vh;
+    height: 14vh;
   }
-  .scroll-down .glyphicon {
+  /* .scroll-down .glyphicon {
     font-size: 1.2em;
-  }
+  } */
   .navbar {
     position: absolute;
     height: 10vh;
@@ -128,14 +132,13 @@
 /* Large devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1100px) {
   .scroll-down {
-    height: 10vh;
+    height: 13vh;
     width: 100vw;
     right: 0;
   }
-  .scroll-down .glyphicon {
-    font-size: 1.5em;
+  .scroll-down .glyphicon > i {
+    padding-top: 1rem;
   }
-
   .navbar {
     position: absolute;
     height: 10vh;
@@ -177,11 +180,17 @@
 @media only screen and (min-width: 1101px) {
   .scroll-down {
     right: 2.5vw;
-    height: 8vh;
-    width: 11vw;
+    height: 10vh;
+    width: 14vw;
+  }
+  .scroll-down .glyphicon {
+    font-size: 1.9rem;
+  }
+  .scroll-down .glyphicon > i {
+    padding-top: 0.1rem;
   }
   .navbar {
-    width: 11vw;
+    width: 14vw;
     position: absolute;
     top: 100vh;
     right: 2.5vw;
@@ -192,11 +201,11 @@
     justify-content: space-around;
     align-items: center;
     height: 30vh;
-    width: 11vw;
+    width: 14vw;
   }
   .nav > li {
     height: 10vh;
-    width: 11vw;
+    width: 14vw;
   }
   /* toggle between position absolute and sticky classes with js */
   .sticky {
@@ -215,7 +224,7 @@
   .navbar,
   .nav,
   .nav > li {
-    width: 9vw;
+    width: 14vw;
   }
   .section-span {
     height: 15vh;
