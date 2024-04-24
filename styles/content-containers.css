@@ -135,7 +135,8 @@
     color: rgba(199, 211, 227, 0.85);
   }
   .content-container:hover .title-col > p  {
-    color: rgba(199, 211, 227, 0.85);
+    /* color: rgba(199, 211, 227, 0.85); */
+    color: var(--blue-2);
   }
   .title-col img {
     -webkit-filter: brightness(0.5);
@@ -184,7 +185,8 @@
     color: rgba(199, 211, 227, 0.85);
   }
   .content-container:hover .title-col > p  {
-    color: rgba(199, 211, 227, 0.85);
+    /* color: rgba(199, 211, 227, 0.85); */
+    color: var(--blue-2);
   }
   .title-col img {
     -webkit-filter: brightness(0.5);
