@@ -24,6 +24,7 @@
 }
 .profile-content-container {
   display: flex;
+  align-items: flex-start;
   /* justify-content: space-evenly; */
 }
 .profile-col-3:hover .gray-icon.my-linkedin {
@@ -114,12 +115,12 @@
 
 /* Large devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1100px) {
-  .profile-content-container {
+  /* .profile-content-container {
     align-items: baseline;
-  }
+  } */
   .profile-col-3 {
     width: 36vw;
-    padding: 1.5rem 2rem;
+    padding: 0 1.5rem 2rem;
   }
   .profile-col-3-img {
     text-align: center;
@@ -129,12 +130,12 @@
 
 /* Large devices (laptops/desktops, 1100px and up) */
 @media only screen and (min-width: 1101px) {
-  .profile-content-container {
+  /* .profile-content-container {
     align-items: baseline;
-  }
+  } */
   .profile-col-3 {
     width: 36vw;
-    padding: 1.5rem 2rem;
+    padding: 0 1.5rem 2rem;
   }
   .profile-col-3-img {
     padding: 0;
