@@ -2,12 +2,6 @@
   float: left;
   text-align: justify;
 }
-.title-col {
-  display: flex;
-  align-items: center;
-  color: var(--blue-1);
-}
-
 .content-title {
   color: var(--blue-1);
   text-align: center;
@@ -20,6 +14,7 @@
 .title-col {
   display: flex;
   align-items: center;
+  color: var(--blue-1);
 }
 .title-col img {
   box-shadow: 1px 1px 2px #39383c, 0 0 25px 1px #5e5e8d, 0 0 5px darkblue;
@@ -157,7 +152,7 @@
   }
   .title-col {
     width: 14rem;
-    text-align: center;
+    /* text-align: center; */
   }
   .title-col p {
     width: 75%;
